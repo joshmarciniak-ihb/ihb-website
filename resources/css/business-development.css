@@ -1,0 +1,342 @@
+.bd-grid {
+    background-color: #f5f5f5;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto, 3);
+    overflow-y: hidden;
+}
+
+/* REQUEST RATE SECTION STYLES */
+.request-rate-img,
+.request-rate-content {
+    grid-column: 1 / 3;
+}
+
+.request-rate-img {
+    width: 55%;
+    height: 446;
+}
+
+.img-container {
+    height: 100%;
+    background-color: #f5f5f5;
+}
+
+.request-rate-img img {
+    width: 100%;
+    height: 95%;
+    object-fit: cover;
+}
+
+.request-rate-content {
+    padding: 1rem;
+    text-align: center;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    grid-row: 1;
+    grid-column: 1 / 3;
+    justify-self: end;
+    margin-right: 3rem;
+}
+
+.content-img {
+    height: 450px;
+}
+
+.clip-left-container {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    padding-top: .2rem;
+    padding-right: .2rem;
+    justify-self: start;
+}
+
+.request-rate-link {
+    margin-top: 2rem;
+    width: 70%;
+}
+
+.bd-customers-image {
+    margin-top: 3rem;
+    grid-row: 2;
+    grid-column: 1 / 3;
+    width: 100%;
+}
+
+.bd-customers-image img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: 10% 30%;
+    filter: brightness(0.7);
+    z-index: 2;
+}
+
+.bd-customer-content {
+    z-index: 1;
+    grid-row: 2;
+    grid-column: 1 / 3;
+    width: 65%;
+    align-self: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.bd-customer-content h1 {
+    color: white;
+    text-shadow: 0 0 25px rgba(0, 0, 0, 0.4), 0 0 6px rgba(0, 0, 0, 0.5);
+    font-size: 3rem;
+    font-style: italic;
+}
+
+.bd-customer-content p {
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 0 0 25px rgba(0, 0, 0, 0.4), 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.bd-customers-links {
+    display: flex;
+    column-gap: 1rem;
+}
+
+.bd-customers-link {
+    background-color: rgba(244, 116, 6, 1);
+    width: 45%;
+    margin-top: 1rem;
+    padding: .5rem;
+    color: white;
+    font-style: italic;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    align-self: start;
+    -moz-box-shadow: 0 0 3px rgb(54, 54, 54);
+    -webkit-box-shadow: 0 0 3px rgb(54, 54, 54);
+    box-shadow: 2 2 3px rgb(54, 54, 54);
+}
+
+.bd-customers-link:hover {
+    background-color: rgb(243, 132, 35);
+}
+
+.bd-contact-card {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    grid-column: 1 / 3;
+    grid-row: 3;
+    justify-self: center;
+    align-self: center;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 2rem;
+    -moz-box-shadow: 0 0 3px #8a8a8a;
+    -webkit-box-shadow: 0 0 3px #8a8a8a;
+    box-shadow: 2 2 3px #8a8a8a;
+    border-radius: 8px;
+}
+
+.bd-card-title h2 {
+    font-size: 36px;
+    font-style: italic;
+}
+
+.bd-card-content {
+    margin-top: 1rem;
+}
+
+
+.bd-card-contacts {
+    margin-top: 1rem;
+    background-color: #f5f5f5;
+    display: flex;
+    border-radius: 8px;
+}
+
+.bd-customer-content .title-divider {
+    margin-left: 25%;
+}
+
+.bd-customer-content h1 {
+    color: white;
+    text-shadow: 0 0 25px rgba(0, 0, 0, 0.4), 0 0 6px rgba(0, 0, 0, 0.5);
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+.bd-customer-content p {
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 0 0 25px rgba(0, 0, 0, 0.4), 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.bd-customers-links {
+    display: flex;
+    flex-direction: column;
+    column-gap: 1rem;
+    width: 100%;
+}
+
+.bd-customers-link {
+    width: 60%;
+}
+
+.bd-card-contact {
+    padding: 2rem;
+    width: 50%;
+}
+
+.bd-contact-title h2 {
+    font-size: 24px;
+}
+
+.bd-contact-name h3 {
+    font-size: 22px;
+    color: rgba(244, 116, 6, 1);
+}
+
+.bd-contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.bd-contact-info p {
+    font-size: 18px;
+}
+
+.bd-contact-info a {
+    text-decoration: none;
+    color: rgba(244, 116, 6, 1)
+}
+
+.bd-customer-content .card-divider {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .bd-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto, 5);
+    }
+
+    .request-rate-img,
+    .request-rate-content {
+        grid-column: 1;
+    }
+
+    .request-rate-img {
+        grid-row: 1;
+        width: 100%;
+    }
+
+    .request-rate-img img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .request-rate-content {
+        grid-row: 2;
+        padding: 1rem;
+        margin-right: 0;
+        text-align: center;
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+    }
+
+    .clip-left-img {
+        clip-path: unset;
+    }
+
+    .clip-left-container {
+        grid-column: 1;
+        grid-row: 1;
+        padding: 0;
+        clip-path: unset;
+        background-color: unset;
+        justify-self: unset;
+    }
+
+    .right-content {
+        grid-row: 2;
+        grid-column: 1;
+        justify-self: center;
+
+    }
+
+    .bd-customers-image {
+        grid-row: 3;
+        grid-column: 1;
+    }
+    
+    .bd-customers-image img {
+        object-position: 30% 30%;
+    }
+    
+    .bd-customer-content {
+        grid-row: 3 / 4;
+        grid-column: 1;
+        width: 90%;
+        background-color: white;
+        justify-self: center;
+        align-self: end;
+        border-radius: 8px;
+        margin-top: 35rem;
+    }
+
+    .bd-customer-content h1 {
+        font-size: 2rem;
+        color: black;
+        text-shadow: unset;
+        text-align: center;
+    }
+
+    .bd-customer-content .card-divider {
+        display: flex;
+    }
+    
+    .bd-customer-content p {
+        margin-top: 1rem;
+        font-size: 1.25rem;
+        color: black;
+        text-shadow: unset;
+    }
+
+    .bd-customers-link {
+        width: 100%;
+    }
+    
+    .bd-contact-card {
+        grid-column: 1;
+        grid-row: 5;
+        width: 100%;
+        -moz-box-shadow: unset;
+        -webkit-box-shadow: unset;
+        box-shadow: unset;
+        border-radius: 0;
+    }
+
+    .bd-card-contacts {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .bd-card-contact {
+        width: 100%;
+    }
+}

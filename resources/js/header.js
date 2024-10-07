@@ -2,17 +2,17 @@
     d.addEventListener("DOMContentLoaded", () => {
       const checkbox = d.querySelector(".checkbox3");
       const header = d.querySelector(".header");
-      const mobileNavMenu = d.querySelector('.mobile-nav-menu');
+      const mobileNavMenuWrapper = d.querySelector('.mobile-nav-menu-wrapper');
   
       const handleCheckboxChange = () => {
         if (checkbox.checked) {
           header.style.backgroundColor = 'rgba(19, 19, 19, 0.9)';
-          mobileNavMenu.classList.remove('closed');
-          mobileNavMenu.classList.add('open');
+          mobileNavMenuWrapper.classList.remove('closed');
+          mobileNavMenuWrapper.classList.add('open');
         } else {
           header.style.backgroundColor = "";
-          mobileNavMenu.classList.remove('open');
-          mobileNavMenu.classList.add('closed');
+          mobileNavMenuWrapper.classList.remove('open');
+          mobileNavMenuWrapper.classList.add('closed');
         }
       };
   

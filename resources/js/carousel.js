@@ -1,55 +1,92 @@
 !(function (d) {
   d.addEventListener("DOMContentLoaded", () => {
-    const carouselContainer = d.querySelector(".carousel");
-    const slideWrapper = d.querySelector(".carousel-slides");
-    const slides = d.querySelectorAll(".carousel-slide");
-    const navdots = d.querySelectorAll(".carousel-navdots button");
-    const slideContent = d.querySelectorAll(".slide-content");
+    // Components
+    const carouselContainer = document.querySelector(".carousel");
+    const slideWrapper = document.querySelector(".carousel__slides");
+    const slides = document.querySelectorAll(".carousel__slide");
+    const navdots = document.querySelectorAll(".carousel__navdots button");
 
-    const nSlides = slides.length;
-    const nSlidesCloned = 1;
-
-    const firstSlideClone = slides[0].cloneNode(true);
-    slideWrapper.append(firstSlideClone);
-
-    const lastSlideClone = slides[nSlides - 1].cloneNode(true);
-    slideWrapper.prepend(lastSlideClone);
-
+    // Parameters
+    const n_slides = slides.length;
+    const n_slidesCloned = 1;
     let slideWidth = slides[0].offsetWidth;
-    let isDragging = false;
 
+    function index_slideCurrent() {
+      return Math.round(slideWrapper.scrollLeft / slideWidth - n_slidesCloned);
+    }
+
+    // Nav dot click handler
+    function goto(index) {
+      slideWrapper.scrollTo(slideWidth * (index + n_slidesCloned), 0);
+    }
+    for (let i = 0; i < n_slides; i++) {
+      navdots[i].addEventListener("click", () => goto(i));
+    }
+
+    // Marking nav dots
+    function markNavdot(index) {
+      navdots[index].classList.add("is-active");
+      navdots[index].setAttribute("aria-disabled", "true");
+    }
+    function updateNavdot() {
+      const c = index_slideCurrent();
+      if (c < 0 || c >= n_slides) return; // in these cases, forward() and rewind() will be executed soon
+      markNavdot(c);
+    }
+    function updateAnimation(index) {
+      // Remove animate class from all titles and links
+      slides.forEach(slide => {
+        const title = slide.querySelector('.hero-title');
+        const link = slide.querySelector('.hero-links');
+        if (title) title.classList.remove('animate');
+        if (link) link.classList.remove('animate');
+      });
+    
+      // Add animate class to the current slide's title and link after a slight delay
+      const currentSlide = slides[index];
+      if (currentSlide) {
+        const title = currentSlide.querySelector('.hero-title');
+        const link = currentSlide.querySelector('.hero-links');
+        
+        // Use a timeout to ensure the transition has time to kick in
+        setTimeout(() => {
+          if (title) title.classList.add('animate');
+          if (link) link.classList.add('animate');
+        }, 50);  // Adjust the delay as necessary
+      }
+    }
 
     let scrollTimer;
-    const pause = 7000;
-    let itv;
-    const observer = new IntersectionObserver(callback, {threshold: 0.99});
-
-    slideWrapper.addEventListener('scroll', () => {
-      navdots.forEach(navdot => {
-        navdot.classList.remove('is-active');
+    slideWrapper.addEventListener("scroll", () => {
+      // reset
+      navdots.forEach((navdot) => {
+        navdot.classList.remove("is-active");
+        navdot.setAttribute("aria-disabled", "false");
       });
-
-      slideContent.forEach(content => {
-        content.classList.remove('is-active');
-      })
-
-      if (scrollTimer) clearTimeout(scrollTimer);
+      // handle infinite scrolling
+      if (scrollTimer) clearTimeout(scrollTimer); // to cancel if scroll continues
       scrollTimer = setTimeout(() => {
-        if (slideWrapper.scrollLeft < slideWidth * (nSlidesCloned - 1 / 2)) {
+        if (slideWrapper.scrollLeft < slideWidth * (n_slidesCloned - 1 / 2)) {
           forward();
         }
-
-        if (slideWrapper.scrollLeft > slideWidth * ((nSlides - 1 + nSlidesCloned) + 1/2)) {
+        if (
+          slideWrapper.scrollLeft >
+          slideWidth * (n_slides - 1 + n_slidesCloned + 1 / 2)
+        ) {
           rewind();
         }
       }, 100);
-      updateSlideContent();
+      // mark the navdot
       updateNavdot();
+      updateAnimation(index_slideCurrent());
     });
 
+    // Handle window resizing
     let resizeTimer;
-    window.addEventListener('resize', () => {
+    window.addEventListener("resize", () => {
+      // update parameters
       slideWidth = slides[0].offsetWidth;
+      // for autoplay
       if (resizeTimer) clearTimeout(resizeTimer);
       stop();
       resizeTimer = setTimeout(() => {
@@ -57,104 +94,56 @@
       }, 400);
     });
 
-    carouselContainer.addEventListener("pointerenter", () => stop());
-    carouselContainer.addEventListener("pointerleave", () => play());
-    carouselContainer.addEventListener("touchstart", () => stop());
+    // Infinite scrolling
+    const firstSlideClone = slides[0].cloneNode(true);
+    firstSlideClone.setAttribute("aria-hidden", "true");
+    slideWrapper.append(firstSlideClone);
 
-    carouselContainer.addEventListener("mousedown", (e) => {
-      isDragging = true;
-    });
-
-    carouselContainer.addEventListener("mouseleave", () => {
-      isDragging = false;
-    });
-
-    carouselContainer.addEventListener("mouseup", () => {
-      isDragging = false;
-    });
-
-    carouselContainer.addEventListener("mousemove", (e) => {
-      if (!isDragging) return;
-      e.preventDefault();
-      scrollTimer = setTimeout(() => {
-        if (slideWrapper.scrollLeft < slideWidth * (nSlidesCloned - 1 / 2)) {
-          forward();
-        }
-
-        if (slideWrapper.scrollLeft > slideWidth * ((nSlides - 1 + nSlidesCloned) + 1/2)) {
-          rewind();
-        }
-      }, 100);
-      updateSlideContent();
-      updateNavdot();
-    });
-
-    setSlideContent(0);
-    goto(0);
-    markNavdot(0);
-    
-    slideWrapper.classList.add("smooth-scroll");
-    observer.observe(carouselContainer);
-
-    function indexSlideCurrent() {
-      return Math.round(slideWrapper.scrollLeft / slideWidth - nSlidesCloned);
-    }
-
-    function goto(index) {
-      slideWrapper.scrollTo(slideWidth * (index + nSlidesCloned), 0);
-    }
-    for (let i = 0; i < nSlides; i++) {
-      navdots[i].addEventListener("click", () => goto(i));
-    }
-
-    function markNavdot(index) {
-      navdots[index].classList.add("is-active");
-    }
-
-    function updateNavdot() {
-      const c = indexSlideCurrent();
-      if (c < 0 || c >= nSlides) return;
-      markNavdot(c);
-    }
-
-    function setSlideContent(index) {
-      slideContent[index].classList.add("is-active");
-    }
-
-    function updateSlideContent(){
-      const c = indexSlideCurrent();
-      if (c < 0 || c >= nSlides) return;
-      setSlideContent(c);
-    }
+    const lastSlideClone = slides[n_slides - 1].cloneNode(true);
+    lastSlideClone.setAttribute("aria-hidden", "true");
+    slideWrapper.prepend(lastSlideClone);
 
     function rewind() {
-      slideWrapper.classList.remove('smooth-scroll');
+      slideWrapper.classList.remove("smooth-scroll");
+
       setTimeout(() => {
-        slideWrapper.scrollTo(slideWidth * nSlidesCloned, 0);
-        slideWrapper.classList.add('smooth-scroll');
+        // wait for smooth scroll to be disabled
+        slideWrapper.scrollTo(slideWidth * n_slidesCloned, 0);
+        slideWrapper.classList.add("smooth-scroll");
       }, 100);
     }
 
     function forward() {
-      slideWrapper.classList.remove('smooth-scroll');
+      slideWrapper.classList.remove("smooth-scroll");
       setTimeout(() => {
-        slideWrapper.scrollTo(slideWidth * ( nSlides - 1 + nSlidesCloned), 0);
-      });
+        // wait for smooth scroll to be disabled
+        slideWrapper.scrollTo(slideWidth * (n_slides - 1 + n_slidesCloned), 0);
+        slideWrapper.classList.add("smooth-scroll");
+      }, 100);
     }
 
+    // Autoplay
     function next() {
-      goto(indexSlideCurrent() + 1);
+      const currentIndex = index_slideCurrent();
+      goto(currentIndex + 1);
     }
-
+    const pause = 6000;
+    let itv;
     function play() {
+      // early return if the user prefers reduced motion
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        return;
+      }
       clearInterval(itv);
+      slideWrapper.setAttribute("aria-live", "off");
       itv = setInterval(next, pause);
     }
-
     function stop() {
       clearInterval(itv);
+      slideWrapper.setAttribute("aria-live", "polite");
     }
-
+    const observer = new IntersectionObserver(callback, { threshold: 0.99 });
+    observer.observe(carouselContainer);
     function callback(entries, observer) {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -162,7 +151,27 @@
         } else {
           stop();
         }
-      })
+      });
     }
+    // for mouse users
+    carouselContainer.addEventListener("pointerenter", () => stop());
+    carouselContainer.addEventListener("pointerleave", () => play());
+    // for keyboard users
+    carouselContainer.addEventListener("focus", () => stop(), true);
+    carouselContainer.addEventListener(
+      "blur",
+      () => {
+        if (carouselContainer.matches(":hover")) return;
+        play();
+      },
+      true
+    );
+    // for touch device users
+    carouselContainer.addEventListener("touchstart", () => stop());
+
+    // Initialization
+    goto(0);
+    markNavdot(0);
+    slideWrapper.classList.add("smooth-scroll");
   });
 })(document);

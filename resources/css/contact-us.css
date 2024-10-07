@@ -1,0 +1,92 @@
+.contact-info-card-title h2 {
+    font-size: 32px;
+}
+
+.contact-title h3 {
+    font-size: 24px;
+}
+
+.contact-title h4 {
+    font-size: 20px;
+}
+
+.contact-info p {
+    font-size: 18px;
+}
+.contact-info-wrapper {
+    background-color: #F5F5F5;
+    margin-top: 3rem;
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+}
+
+.contact-info-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+.contact-info-card {
+    width: 33%;
+    min-height: 200px;
+    background-color: white;
+    padding: 20px;
+    margin-right: 20px;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 2 2 3px #ccc;
+}
+
+.contact-info-card-title {
+    text-align: center;
+}
+
+.contact-info-card-title {
+    border-bottom: 4px solid rgba(244, 116, 6, 1);
+}
+
+.contact-info-card-content {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.contact-title {
+    margin-right: 20px;
+}
+
+.contact-info-card-content h4 {
+    color: rgba(244, 116, 6, 1);
+    margin-bottom: 5px;
+}
+
+.contact-info-card-content a {
+    color: rgba(244, 116, 6, 1);
+}
+
+.contact-label {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 992px) {
+    .hero-image img {
+        object-position: 65% 40%;
+    }
+
+    .contact-info-row {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .contact-info-card {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}

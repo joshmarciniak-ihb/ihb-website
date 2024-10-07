@@ -1,0 +1,83 @@
+.services-grid {
+    margin-top: 3rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 2rem;
+    justify-items: center;
+    background-color: #F5F5F5; 
+}
+
+.content-desc {
+    text-align: center;
+}
+
+.services-card {
+    width: 90%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 2 2 3px #ccc;
+}
+
+.services-card-content {
+    padding: 2rem;
+}
+
+.services-card-content a {
+    color: rgba(244, 116, 6, 1);
+    text-decoration: none;
+}
+
+.services-card-content a:hover {
+    color: rgb(243, 132, 35);
+    text-decoration: none;
+}
+
+.services-card-image {
+    width: 100%;
+}
+
+.services-card-image img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.services-card-content h2 {
+    margin-bottom: 1rem;
+}
+
+.services-card-content p {
+    margin-top: 1rem;
+}
+
+.tile-link {
+    width: 90%;
+    margin-bottom: 1rem;
+    align-self: center;
+    margin-top: auto;
+}
+
+@media only screen and (max-width: 992px) {
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        padding: 2rem 0 2rem 0;
+        width: 100%;
+    }
+
+    .services-card {
+        width: 100%;
+    }
+}

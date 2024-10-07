@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./resources/css/styles.css" />
-    <link rel="stylesheet" href="./resources/css/index.css" />
     <link rel="stylesheet" href="./resources/css/header.css" />
+    <link rel="stylesheet" href="./resources/css/employees.css" />
     <link rel="stylesheet" href="./resources/css/footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,16 +17,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
-
     <script src="./resources/js/header.js"></script>
-    <script src="./resources/js/carousel.js"></script>
     <script src="./resources/js/accordion.js"></script>
-    <title>Indiana Harbor Belt Railroad | Home</title>
+    <title>Indiana Harbor Belt | Employees</title>
     <link rel="icon" type="image/x-icon" href="./resources/images/ihb-logo.ico">
   </head>
   <body>
     <div class="header-grid">
-      <div class="header">
+      <div class="header header-static">
         <div class="logo">
           <a href="/"
             ><img src="./resources/images/ihb-logo.png" alt="IHB Logo"
@@ -54,7 +52,7 @@
               <a class="title">EMPLOYEES</a>
               <div class="subnav-content">
                 <div class="subnav-content-col">
-                  <a href="./employees.html">EMPLOYEES</a>
+                  <a href="/employees.html">EMPLOYEES</a>
                   <a href="./ihb-apps.html">IHB APPS</a>
                   <a
                     href="https://www2.nscorp.com/WebConnect/wcLogin.jsp"
@@ -88,8 +86,8 @@
                 </div>
                 <div class="subnav-content-col">
                   <a href="./business-development.html">BUSINESS DEVELOPMENT</a>
-                  <a href="./maps.html">MAPS</a>
                   <a href="./services.html">SERVICES</a>
+                  <a href="./maps.html">MAPS</a>
                 </div>
               </div>
             </div>
@@ -246,75 +244,23 @@
         </div>
       </div>
 
-      <div class="carousel-wrapper">
-        <div class="carousel" role="group">
-          <div role="group" class="carousel__navdots home-page">
-            <button type="button"></button>
-            <button type="button"></button>
-            <button type="button"></button>
-          </div>
-          <div class="carousel__slides">
-            <div class="carousel__slide" role="group">
-              <img
-                class="banner-img"
-                src="./resources/images/banners/ihb-engine-hero1.jpg"
-                alt="IHB Engine"
-              />
-              <div class="slide-content">
-                <div class="slide-info">
-                  <h1 class="hero-title">
-                    SAFETY IS OUR PRIORITY<br />SERVICE IS OUR SPECIALTY
-                  </h1>
-                  <a class="orange-btn hero-links" href="./about-us.html"
-                    >LEARN MORE</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="carousel__slide" role="group">
-              <img
-                class="banner-img"
-                src="./resources/images/banners/ihb-building-hero.jpg"
-                alt="IHB Main Office"
-              />
-              <div class="slide-content">
-                <div class="slide-info">
-                  <h1 class="hero-title">
-                    COMMITTED TO<br />EXCEPTIONAL SERVICE
-                  </h1>
-                  <a
-                    class="orange-btn hero-links"
-                    href="./business-development.html"
-                    >LEARN MORE</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="carousel__slide" role="group">
-              <img
-                class="banner-img"
-                src="./resources/images/banners/map-hero.jpg"
-                alt="IHB Tracks Map"
-              />
-              <div class="slide-content">
-                <div class="slide-info">
-                  <h1 class="hero-title">
-                    CONNECTING WITH ALL<br />CHICAGO RAILROADS
-                  </h1>
-                  <a class="orange-btn hero-links" href="./maps.html"
-                    >LEARN MORE</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="hero-img-grid">
+        <div class="hero-img">
+          <img
+            class="banner-img"
+            src="./resources/images/banners/employees-hero.jpg"
+            alt=""
+          />
+        </div>
+        <div class="hero-img-content">
+          <h1>EMPLOYEES</h1>
         </div>
       </div>
 
       <div class="quick-links">
         <div class="quick-links-col">
-          <a class="quick-link" href="./employees.html">EMPLOYEE RESOURCES</a>
-          <a class="quick-link" href="./ihb-apps.html">IHB APPS</a>
+          <a class="quick-link" href="./resources.html">EMPLOYEE RESOURCES</a>
+          <a class="quick-link" href="./questions.html">SUBMIT A QUESTION</a>
         </div>
         <div class="quick-links-col">
           <a
@@ -332,113 +278,171 @@
         </div>
       </div>
     </div>
-
-    <div class="content-grid">
-      <div class="ms">
-        <h1 class="content-title">Connecting Industries, Empowering Growth</h1>
-        <div class="title-divider"></div>
-        <div class="ms-content">
+    <div class="page-title-wrapper">
+      <div class="page-title">
+        <div class="page-title-title">
+          <h1 class="content-title">FIND YOUR RESOURCE</h1>
+          <div class="title-divider"></div>
+        </div>
+        <div class="page-title-content">
           <p class="content-desc">
-            At Indiana Harbor Belt, we are committed to delivering comprehensive
-            rail solutions tailored to the needs of our diverse industrial
-            clientele. With a robust network of 160 customers and an annual
-            volume of 170,000 carloads, we specialize in efficient industrial
-            switching and seamless interchanges with 16 rail carriers in
-            Chicago.
+            At Indiana Harbor Belt Railroad, the safety and well-being of our
+            employees are our top priorities. We are dedicated to creating a
+            supportive work environment where every team member feels valued.
+            Together, we can maintain a safe and productive workplace.
           </p>
-          <a class="orange-btn ms-link content-link" href="./about-us.html"
-            >MORE ABOUT US</a
-          >
         </div>
       </div>
+    </div>
 
-      <div class="eo-wrapper">
-        <div class="eo-content">
-          <h2 class="eo-content-title content-title">SAFETY IS OUR PRIORITY</h2>
-          <div class="eo-content-body">
-            <div class="content-divider"></div>
-            <p class="content-desc">
-              Explore employment opportunities to become a part of our team and
-              help us drive a mission focused on delivering secure and
-              dependable service to our customers. We believe that our employees
-              are our greatest asset, and their safety is our top priority. Rail
-              transportation is already the safest method for freight movement,
-              and we’re dedicated to making it even safer.
-            </p>
-            <a class="orange-btn content-link" href="./careers.html"
-              >VIEW EMPLOYMENT OPPORTUNITIES</a
-            >
-          </div>
+    <div class="employee-info-grid">
+      <div class="employee-info-card">
+        <div class="employee-info-card-image">
+          <img src="./resources/images/tiles/ihb-logo-alt.png" />
         </div>
-        <div class="eo-image right-img clip-right-container content-img">
-          <div class="img-container clip-right-img">
-            <img src="./resources/images/ihb-blue.jpg" alt="Blue Island Yard" />
-          </div>
+        <div class="employee-info-card-content">
+          <h3>IHB APPS</h3>
+          <div class="card-divider"></div>
+          <p>
+            Access commonly used IHB APP systems and explore the available IHB
+            applications.
+          </p>
         </div>
+        <a class="tile-link orange-btn" href="./ihb-apps.html"
+          >ACCESS IHB APPS</a
+        >
       </div>
 
-      <div class="body-menu-wrapper">
-        <div class="body-menu">
-          <div class="body-menu-item card">
-            <img
-              src="./resources/images/roundhouse.jpg"
-              alt="IHB Gibson Roundhouse"
-            />
-            <div class="body-menu-item-content">
-              <h2>WHAT DO WE DO?</h2>
-              <div class="card-divider"></div>
-              <p>
-                We are a Class III railroad and the largest switch carrier in
-                the United States, operating a comprehensive network of 320
-                miles (510 km) of track. We proudly serve 160 industries,
-                transporting a diverse range of products, including steel,
-                petroleum, chemicals, manufactured goods, and food products.
-              </p>
-            </div>
-            <a class="body-menu-link orange-btn" href="./about-us.html"
-              >MORE ABOUT US</a
-            >
-          </div>
-          <div class="body-menu-item card">
-            <img src="./resources/images/rails.jpg" alt="Locomotive Rails" />
-            <div class="body-menu-item-content">
-              <h2>WHERE ARE WE LOCATED?</h2>
-              <div class="card-divider"></div>
-              <p>
-                Our main office is located at 2721 161st St, Hammond, IN. Our
-                Blue Island yard in Riverdale, IL, is our largest, while the
-                Gibson Yard in Hammond is among the largest automobile traffic
-                switching operations in the United States. Additional key yards
-                in our network include Burnham, Calumet City, Alsip, Argo,
-                LaGrange, Norpaul, and Michigan Avenue.
-              </p>
-            </div>
-            <a class="body-menu-link orange-btn" href="./maps.html"
-              >VIEW OUR YARDS</a
-            >
-          </div>
-          <div class="body-menu-item card">
-            <img src="./resources/images/question.jpg" alt="Ask a Question" />
-            <div class="body-menu-item-content">
-              <h2>HAVE A QUESTION?</h2>
-              <div class="card-divider"></div>
-              <p>
-                Have a question about the Indiana Harbor Belt Railroad? For
-                inquiries, support, or further information, please visit our
-                Contact Us page. Our team is ready to assist you and will
-                respond promptly to your questions or concerns.
-              </p>
-              <br />
-              <p>
-                For emergencies call
-                <a class="tel-link" href="tel:219-989-4759">219-989-4759</a>
-              </p>
-            </div>
-            <a class="body-menu-link orange-btn" href="./contact-us.html"
-              >ASK A QUESTION</a
-            >
-          </div>
+      <div class="employee-info-card">
+        <div class="employee-info-card-image">
+          <img src="./resources/images/tiles/ns-logo.jpg" />
         </div>
+        <div class="employee-info-card-content">
+          <h3>NS MAINFRAME</h3>
+          <div class="card-divider"></div>
+          <p>
+            Access the NS Horse screen from outside the IHB computer network
+            (such as your home computer). This link will not work on the IHB
+            kiosks. The kiosks have a separate link for NS Horse screen access.
+          </p>
+        </div>
+        <a
+          class="tile-link orange-btn"
+          href="https://www2.nscorp.com/WebConnect/wcLogin.jsp"
+          target="_blank"
+          >ACCESS THE NS MAINFRAME</a
+        >
+      </div>
+
+      <div class="employee-info-card">
+        <div class="employee-info-card-image">
+          <img src="./resources/images/tiles/track-img1.jpg" />
+        </div>
+        <div class="employee-info-card-content">
+          <h3>ERC</h3>
+          <div class="card-divider"></div>
+          <p>Access the Indiana Harbor Belt Employee Resource Center.</p>
+        </div>
+        <a
+          class="tile-link orange-btn"
+          href="https://newerc.nscorp.com/irj/portal"
+          target="_blank"
+          >ACCESS THE ERC</a
+        >
+      </div>
+
+      <div class="employee-info-card">
+        <div class="employee-info-card-image">
+          <img src="./resources/images/tiles/safetrack-img.jpg" />
+        </div>
+        <div class="employee-info-card-content">
+          <h3>SAFETRACK</h3>
+          <div class="card-divider"></div>
+          <p>
+            Access the Indiana Harbor Belt SafeTrack asset management and
+            regulatory compliance system.
+          </p>
+        </div>
+        <a
+          class="tile-link orange-btn"
+          href="https://ihb1.maxaccel.com/SafeTrack/"
+          target="_blank"
+          >ACCESS SAFETRACK</a
+        >
+      </div>
+
+      <div class="employee-info-card">
+        <div class="employee-info-card-image">
+          <img src="./resources/images/tiles/eap-logo.png" />
+        </div>
+        <div class="employee-info-card-content">
+          <h3>EAP</h3>
+          <div class="card-divider"></div>
+          <p>
+            Discover the comprehensive support offered by Indiana Harbor Belt's
+            Employee Assistance Program and explore the valuable benefits
+            designed to enhance your well-being.
+          </p>
+        </div>
+        <a
+          class="tile-link orange-btn"
+          href="https://www.theeap.com/"
+          target="_blank"
+          >LEARN MORE</a
+        >
+      </div>
+
+      <div class="employee-info-card">
+        <div class="employee-info-card-image">
+          <img src="./resources/images/tiles/outlook-logo.jpg" />
+        </div>
+        <div class="employee-info-card-content">
+          <h3>EMAIL</h3>
+          <div class="card-divider"></div>
+          <p>Access the Indiana Harbor Belt Outlook email login page.</p>
+        </div>
+        <a
+          class="tile-link orange-btn"
+          href="https://webmail.ihbrr.com/owa"
+          target="_blank"
+          >ACCESS EMAIL</a
+        >
+      </div>
+
+      <div class="employee-info-card">
+        <div class="employee-info-card-image">
+          <img src="./resources/images/tiles/policies.jpg" />
+        </div>
+        <div class="employee-info-card-content">
+          <h3>BENEFITS & POLICIES</h3>
+          <div class="card-divider"></div>
+          <p>
+            Access the Employee Benefits and Policies page for important
+            information about health benefits, retirement, and workplace
+            policies designed to support you.
+          </p>
+        </div>
+        <a class="tile-link orange-btn" href="./policies-benefits.html"
+          >VIEW EMPLOYEE BENEFITS & POLICIES</a
+        >
+      </div>
+
+      <div class="employee-info-card">
+        <div class="employee-info-card-image">
+          <img src="./resources/images/tiles/ihb-resources.png" />
+        </div>
+        <div class="employee-info-card-content">
+          <h3>ADDITIONAL RESOURCES</h3>
+          <div class="card-divider"></div>
+          <p>
+            View the Employee Resources page to access important information and
+            helpful links for including: COVID-19 policies, FMLA and Medical
+            Leave, Transportation, Kiosk Weather Information, and more.
+          </p>
+        </div>
+        <a class="tile-link orange-btn" href="./resources.html"
+          >VIEW ADDITIONAL RESOURCES</a
+        >
       </div>
     </div>
     <footer>
@@ -464,7 +468,9 @@
             <a href="https://webmail.ihbrr.com/owa" target="_blank">Email</a>
             <a href="./resources.html">Resources</a>
             <a href="./policies-benefits.html">Policies & Benefits</a>
-            <a href="https://newerc.nscorp.com/irj/portal" target="_blank">ERC</a>
+            <a href="https://newerc.nscorp.com/irj/portal" target="_blank"
+              >ERC</a
+            >
             <a href="https://www.theeap.com/" target="_blank">EAP</a>
           </div>
 
@@ -485,7 +491,9 @@
           <div class="footer-col">
             <h3>Local Industries</h3>
             <a href="http://www.csx.com/" target="_blank">CSX</a>
-            <a href="http://www.nscorp.com/" target="_blank">Norfolk Southern</a>
+            <a href="http://www.nscorp.com/" target="_blank"
+              >Norfolk Southern</a
+            >
             <a href="http://www.ihbrr.com/lib/links/bnsflinks/bnsflinks.htm"
               >BNSF Links</a
             >
@@ -532,12 +540,16 @@
                 <a href="https://ihb1.maxaccel.com/SafeTrack/" target="_blank"
                   >SafeTrack</a
                 >
-                <a href="https://webmail.ihbrr.com/owa" target="_blank">Email</a>
+                <a href="https://webmail.ihbrr.com/owa" target="_blank"
+                  >Email</a
+                >
                 <a href="./resources.html">Resources</a>
 
                 <a href="./policies-benefits.html">Policies & Benefits</a>
 
-                <a href="https://newerc.nscorp.com/irj/portal" target="_blank">ERC</a>
+                <a href="https://newerc.nscorp.com/irj/portal" target="_blank"
+                  >ERC</a
+                >
 
                 <a href="https://www.theeap.com/" target="_blank">EAP</a>
               </div>
@@ -602,7 +614,11 @@
               <div class="fa-submenu accordion-content">
                 <ul class="fa-submenu-items">
                   <li><a href="http://www.csx.com/" target="_blank">CSX</a></li>
-                  <li><a href="http://www.nscorp.com/" target="_blank">Norfolk Southern</a></li>
+                  <li>
+                    <a href="http://www.nscorp.com/" target="_blank"
+                      >Norfolk Southern</a
+                    >
+                  </li>
                   <li>
                     <a
                       href="http://www.ihbrr.com/lib/links/bnsflinks/bnsflinks.htm"

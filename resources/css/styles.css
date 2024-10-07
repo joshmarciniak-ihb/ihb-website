@@ -1,3 +1,128 @@
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.animate {
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+@media only screen and (min-width: 992px) {
+    .content-title.animate,
+    .content-desc.animate,
+    .content-link.animate,
+    .card.animate {
+        animation: fadeInUp 1.2s .25s both;
+    }
+
+    .title-divider.animate,
+    .content-divider.animate {
+        animation: fadeIn 1s .75s both;
+    }
+
+    .right-img.animate,
+    .row-right.animate,
+    .right-card.animate {
+        animation: fadeInLeft 1.2s .25s both;
+    }
+
+    .left-img.animate,
+    .hero-title.animate,
+    .hero-desc.animate,
+    .hero-links.animate,
+    .row-left.animate,
+    .left-card.animate {
+        animation: fadeInRight 1.2s .25s both;
+    }
+
+    .content-title,
+    .content-desc,
+    .content-link,
+    .hero-title,
+    .hero-links,
+    .card,
+    .title-divider,
+    .content-divider,
+    .row-right,
+    .right-card,
+    .hero-desc,
+    .row-left,
+    .left-card {
+        opacity: 0;
+        transition: opacity 0.1s ease;
+    }
+
+    .hero-title.animate,
+    .hero-links.animate {
+        opacity: 1;
+    }
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -12,6 +137,7 @@ html {
     height: 100%;
     width: 100%;
     position: absolute;
+    overflow-x: hidden;
 }
 
 /*
@@ -73,4 +199,185 @@ h6 {
 #root,
 #__next {
     isolation: isolate;
+}
+
+.page-title-wrapper {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    overflow-y: hidden;
+}
+
+.page-title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+
+}
+
+.page-title-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.page-title-content {
+    margin-top: 1rem;
+}
+
+.page-title-content p {
+    text-align: center;
+}
+
+/* IMG CLIP DESIGN STYLES */
+.clip-left-img {
+    clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
+}
+
+.clip-left-container {
+    clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
+    background-color: rgba(244, 116, 6, 1);
+    overflow-y: hidden;
+    backface-visibility: hidden;
+
+}
+
+.clip-right-img {
+    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.clip-right-container {
+    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+    background-color: rgba(244, 116, 6, 1);
+    overflow-y: hidden;
+    backface-visibility: hidden;
+}
+
+.banner-img {
+    height: 600px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.content-img {
+    height: 350px;
+    object-fit: cover;
+}
+
+.content-heading {
+    font-size: 2rem;
+    font-style: italic;
+    border-bottom: .5rem solid rgba(244, 116, 6, 1);
+    margin-bottom: 1rem;
+}
+
+.orange-btn {
+    background-color: rgba(244, 116, 6, 1);
+    padding: .5rem;
+    color: white;
+    font-style: italic;
+    font-size: 1.25rem;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    -moz-box-shadow: 0 0 3px rgb(54, 54, 54);
+    -webkit-box-shadow: 0 0 3px rgb(54, 54, 54);
+    box-shadow: 2 2 3px rgb(54, 54, 54);
+}
+
+.content-divider,
+.title-divider {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: .5rem;
+    background-color: rgba(244, 116, 6, 1);
+}
+
+.title-divider {
+    width: 120px;
+    clip-path: polygon(7% 0%, 100% 0%, 93% 100%, 0% 100%);
+}
+
+.content-divider {
+    width: 60px;
+    clip-path: polygon(12% 0%, 100% 0%, 88% 100%, 0% 100%);
+}
+
+.card-divider {
+    height: .25rem;
+    width: 100%;
+    background-color: rgba(244, 116, 6, 1);
+}
+
+.orange-btn:hover {
+    background-color: rgb(243, 132, 35);
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+h1 {
+    font-size: 3rem;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 768px) {
+    .page-title-wrapper {
+        justify-content: start;
+    }
+
+    .page-title {
+        align-items: start;
+        width: 100%;
+
+    }
+
+    .page-title-title {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .page-title-title h1 {
+        font-size: 32px;
+    }
+
+    .page-title-content p {
+        padding: 1rem;
+        text-align: start;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        font-style: italic;
+    }
+
+    .banner-card {
+        padding: 2rem;
+        background-color: white;
+        text-align: center;
+        border-radius: 8px;
+        -moz-box-shadow: 0 0 3px rgb(54, 54, 54);
+        -webkit-box-shadow: 0 0 3px rgb(54, 54, 54);
+        box-shadow: 2 2 3px rgb(54, 54, 54);
+    }
 }

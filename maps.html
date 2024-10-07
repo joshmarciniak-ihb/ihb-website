@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./resources/css/styles.css" />
-    <link rel="stylesheet" href="./resources/css/index.css" />
+    <link rel="stylesheet" href="./resources/css/maps.css" />
     <link rel="stylesheet" href="./resources/css/header.css" />
     <link rel="stylesheet" href="./resources/css/footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,20 +17,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
-
     <script src="./resources/js/header.js"></script>
-    <script src="./resources/js/carousel.js"></script>
     <script src="./resources/js/accordion.js"></script>
-    <title>Indiana Harbor Belt Railroad | Home</title>
+    <title>Indiana Harbor Belt Railroad | Maps</title>
     <link rel="icon" type="image/x-icon" href="./resources/images/ihb-logo.ico">
   </head>
   <body>
     <div class="header-grid">
-      <div class="header">
+      <div class="header header-static">
         <div class="logo">
-          <a href="/"
-            ><img src="./resources/images/ihb-logo.png" alt="IHB Logo"
-          /></a>
+          <a href="/"><img src="./resources/images/ihb-logo.png" alt="IHB Logo" /></a>
         </div>
         <div class="navigation">
           <div class="top-nav-items">
@@ -54,7 +50,7 @@
               <a class="title">EMPLOYEES</a>
               <div class="subnav-content">
                 <div class="subnav-content-col">
-                  <a href="./employees.html">EMPLOYEES</a>
+                  <a href="/employees.html">EMPLOYEES</a>
                   <a href="./ihb-apps.html">IHB APPS</a>
                   <a
                     href="https://www2.nscorp.com/WebConnect/wcLogin.jsp"
@@ -88,8 +84,8 @@
                 </div>
                 <div class="subnav-content-col">
                   <a href="./business-development.html">BUSINESS DEVELOPMENT</a>
-                  <a href="./maps.html">MAPS</a>
                   <a href="./services.html">SERVICES</a>
+                  <a href="./maps.html">MAPS</a>
                 </div>
               </div>
             </div>
@@ -136,7 +132,9 @@
               <div class="nav-menu-accordion-tab-content accordion-content">
                 <a class="menu-item" href="./employees.html">EMPLOYEES</a>
 
-                <a class="menu-item" href="./ihb-apps.html">IHB APPS</a>
+                <a class="menu-item" href="./ihb-apps.html"
+                  >IHB APPS</a
+                >
 
                 <a
                   class="menu-item"
@@ -246,197 +244,350 @@
         </div>
       </div>
 
-      <div class="carousel-wrapper">
-        <div class="carousel" role="group">
-          <div role="group" class="carousel__navdots home-page">
-            <button type="button"></button>
-            <button type="button"></button>
-            <button type="button"></button>
-          </div>
-          <div class="carousel__slides">
-            <div class="carousel__slide" role="group">
-              <img
-                class="banner-img"
-                src="./resources/images/banners/ihb-engine-hero1.jpg"
-                alt="IHB Engine"
-              />
-              <div class="slide-content">
-                <div class="slide-info">
-                  <h1 class="hero-title">
-                    SAFETY IS OUR PRIORITY<br />SERVICE IS OUR SPECIALTY
-                  </h1>
-                  <a class="orange-btn hero-links" href="./about-us.html"
-                    >LEARN MORE</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="carousel__slide" role="group">
-              <img
-                class="banner-img"
-                src="./resources/images/banners/ihb-building-hero.jpg"
-                alt="IHB Main Office"
-              />
-              <div class="slide-content">
-                <div class="slide-info">
-                  <h1 class="hero-title">
-                    COMMITTED TO<br />EXCEPTIONAL SERVICE
-                  </h1>
-                  <a
-                    class="orange-btn hero-links"
-                    href="./business-development.html"
-                    >LEARN MORE</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="carousel__slide" role="group">
-              <img
-                class="banner-img"
-                src="./resources/images/banners/map-hero.jpg"
-                alt="IHB Tracks Map"
-              />
-              <div class="slide-content">
-                <div class="slide-info">
-                  <h1 class="hero-title">
-                    CONNECTING WITH ALL<br />CHICAGO RAILROADS
-                  </h1>
-                  <a class="orange-btn hero-links" href="./maps.html"
-                    >LEARN MORE</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="hero-img-grid">
+        <div class="hero-img">
+          <img class="banner-img" src="./resources/images/banners/maps-hero.jpg" alt="">
+        </div>
+        <div class="hero-img-content">
+          <h1>MAPS</h1>
         </div>
       </div>
 
       <div class="quick-links">
         <div class="quick-links-col">
           <a class="quick-link" href="./employees.html">EMPLOYEE RESOURCES</a>
-          <a class="quick-link" href="./ihb-apps.html">IHB APPS</a>
+          <a class="quick-link" href="./contact-us.html">CONTACT US</a>
         </div>
         <div class="quick-links-col">
-          <a
-            class="quick-link"
-            href="https://newerc.nscorp.com/irj/portal"
-            target="_blank"
+          <a class="quick-link" href="https://newerc.nscorp.com/irj/portal" target="_blank"
             >ERC</a
           >
-          <a
-            class="quick-link"
-            href="https://ihb1.maxaccel.com/SafeTrack/"
-            target="_blank"
+          <a class="quick-link" href="https://ihb1.maxaccel.com/SafeTrack/" target="_blank"
             >SAFETRACK</a
           >
         </div>
       </div>
     </div>
-
-    <div class="content-grid">
-      <div class="ms">
-        <h1 class="content-title">Connecting Industries, Empowering Growth</h1>
-        <div class="title-divider"></div>
-        <div class="ms-content">
+    <div class="page-title-wrapper">
+      <div class="page-title ">
+        <div class="page-title-title">
+          <h1 class="content-title">EXPLORE IHB'S NETWORK: YARDS AND MAPS FROM O'HARE TO INDIANA</h1>
+          <div class="title-divider"></div>
+        </div>
+        <div class="page-title-content">
           <p class="content-desc">
-            At Indiana Harbor Belt, we are committed to delivering comprehensive
-            rail solutions tailored to the needs of our diverse industrial
-            clientele. With a robust network of 160 customers and an annual
-            volume of 170,000 carloads, we specialize in efficient industrial
-            switching and seamless interchanges with 16 rail carriers in
-            Chicago.
+            The IHB encircles Chicago from near O'Hare to Northwest Indiana,
+            generally following I-294 and I-80/94. Key yards include Blue Island
+            in Riverdale, IL (a Class 44 track hump yard), Gibson in Hammond, IN
+            (among the largest automobile traffic switching operations), and
+            Michigan Avenue in East Chicago, IN. View detailed maps of all our
+            yards below.
           </p>
-          <a class="orange-btn ms-link content-link" href="./about-us.html"
-            >MORE ABOUT US</a
-          >
+        </div>
+      </div>
+    </div>
+
+    <div class="maps-flex">
+      <div class="map-row">
+        <div class="map-img left-img clip-left-container">
+          <div class="img-container clip-left-img">
+            <img src="./resources/images/maps/alsip.jpg" alt="Alsip"/>
+          </div>
+        </div>
+        <div class="map-description right-description">
+          <h2 class="content-title">ALSIP</h2>
+          <div class="content-divider"></div>
+          <p class="content-desc">
+            The Alsip yard is located at 14000 South Halsted Street, Riverdale,
+            IL 60827.
+          </p>
+          <button class="map-link orange-btn content-link" popovertarget="alsip-popover">VIEW MAP</button>
+        </div>
+        <div class="popover" id="alsip-popover" popover>
+          <div class="popover-title">
+            <h3>ALSIP</h3>
+            <button class="popover-close" popovertarget="alsip-popover" popovertargetaction="hide"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="popover-img">
+            <img src="./resources/images/maps/alsip.jpg" alt="Alsip"/>
+          </div>
         </div>
       </div>
 
-      <div class="eo-wrapper">
-        <div class="eo-content">
-          <h2 class="eo-content-title content-title">SAFETY IS OUR PRIORITY</h2>
-          <div class="eo-content-body">
-            <div class="content-divider"></div>
-            <p class="content-desc">
-              Explore employment opportunities to become a part of our team and
-              help us drive a mission focused on delivering secure and
-              dependable service to our customers. We believe that our employees
-              are our greatest asset, and their safety is our top priority. Rail
-              transportation is already the safest method for freight movement,
-              and we’re dedicated to making it even safer.
-            </p>
-            <a class="orange-btn content-link" href="./careers.html"
-              >VIEW EMPLOYMENT OPPORTUNITIES</a
-            >
-          </div>
-        </div>
-        <div class="eo-image right-img clip-right-container content-img">
+      <div class="map-row">
+        <div class="map-img right-img clip-right-container">
           <div class="img-container clip-right-img">
-            <img src="./resources/images/ihb-blue.jpg" alt="Blue Island Yard" />
+            <img src="./resources/images/maps/argo.jpg" alt="Argo" />
+          </div>
+        </div>
+        <div class="map-description left-description">
+          <h2 class="content-title">ARGO</h2>
+          <div class="content-divider"></div>
+          <p class="content-desc">
+            The Argo yard is located at 6300 South Archer Road, Argo, IL 60501.
+          </p>
+          <button class="map-link orange-btn content-link" popovertarget="argo-popover">VIEW MAP</button>
+        </div>
+        <div class="popover" id="argo-popover" popover>
+          <div class="popover-title">
+            <h3>ARGO</h3>
+            <button class="popover-close" popovertarget="argo-popover" popovertargetaction="hide"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="popover-img">
+            <img src="./resources/images/maps/argo.jpg" alt="ARGO"/>
           </div>
         </div>
       </div>
 
-      <div class="body-menu-wrapper">
-        <div class="body-menu">
-          <div class="body-menu-item card">
-            <img
-              src="./resources/images/roundhouse.jpg"
-              alt="IHB Gibson Roundhouse"
-            />
-            <div class="body-menu-item-content">
-              <h2>WHAT DO WE DO?</h2>
-              <div class="card-divider"></div>
-              <p>
-                We are a Class III railroad and the largest switch carrier in
-                the United States, operating a comprehensive network of 320
-                miles (510 km) of track. We proudly serve 160 industries,
-                transporting a diverse range of products, including steel,
-                petroleum, chemicals, manufactured goods, and food products.
-              </p>
-            </div>
-            <a class="body-menu-link orange-btn" href="./about-us.html"
-              >MORE ABOUT US</a
-            >
+      <div class="map-row">
+        <div class="map-img left-img clip-left-container">
+          <div class="img-container clip-left-img">
+            <img src="./resources/images/maps/blue-island.jpg" alt="Blue Island" />
           </div>
-          <div class="body-menu-item card">
-            <img src="./resources/images/rails.jpg" alt="Locomotive Rails" />
-            <div class="body-menu-item-content">
-              <h2>WHERE ARE WE LOCATED?</h2>
-              <div class="card-divider"></div>
-              <p>
-                Our main office is located at 2721 161st St, Hammond, IN. Our
-                Blue Island yard in Riverdale, IL, is our largest, while the
-                Gibson Yard in Hammond is among the largest automobile traffic
-                switching operations in the United States. Additional key yards
-                in our network include Burnham, Calumet City, Alsip, Argo,
-                LaGrange, Norpaul, and Michigan Avenue.
-              </p>
-            </div>
-            <a class="body-menu-link orange-btn" href="./maps.html"
-              >VIEW OUR YARDS</a
-            >
+        </div>
+        <div class="map-description right-description">
+          <h2 class="content-title">BLUE ISLAND</h2>
+          <div class="content-divider"></div>
+          <p class="content-desc">
+            The Blue Island yard is located at 14000 South Halsted Street,
+            Riverdale, IL 60827.
+          </p>
+          <button class="map-link orange-btn content-link" popovertarget="bi-popover">VIEW MAP</button>
+        </div>
+        <div class="popover" id="bi-popover" popover>
+          <div class="popover-title">
+            <h3>BLUE ISLAND</h3>
+            <button class="popover-close" popovertarget="bi-popover" popovertargetaction="hide"><i class="fa-solid fa-xmark"></i></button>
           </div>
-          <div class="body-menu-item card">
-            <img src="./resources/images/question.jpg" alt="Ask a Question" />
-            <div class="body-menu-item-content">
-              <h2>HAVE A QUESTION?</h2>
-              <div class="card-divider"></div>
-              <p>
-                Have a question about the Indiana Harbor Belt Railroad? For
-                inquiries, support, or further information, please visit our
-                Contact Us page. Our team is ready to assist you and will
-                respond promptly to your questions or concerns.
-              </p>
-              <br />
-              <p>
-                For emergencies call
-                <a class="tel-link" href="tel:219-989-4759">219-989-4759</a>
-              </p>
-            </div>
-            <a class="body-menu-link orange-btn" href="./contact-us.html"
-              >ASK A QUESTION</a
-            >
+          <div class="popover-img">
+            <img src="./resources/images/maps/blue-island.jpg" alt="Blue Island"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-row">
+        <div class="map-img right-img clip-right-container">
+          <div class="img-container clip-right-img">
+            <img src="./resources/images/maps/calcity.jpg" alt="Calumet City" />
+          </div>
+        </div>
+        <div class="map-description left-description">
+          <h2 class="content-title">CALUMET CITY</h2>
+          <div class="content-divider"></div>
+          <p class="content-desc">
+            The Calumet City yard is located at 1700 167th Street, Calumet City,
+            IL 60409.
+          </p>
+          <button class="map-link orange-btn content-link" popovertarget="calcity-popover">VIEW MAP</button>
+        </div>
+        <div class="popover" id="calcity-popover" popover>
+          <div class="popover-title">
+            <h3>CALUMET CITY</h3>
+            <button class="popover-close" popovertarget="calcity-popover" popovertargetaction="hide"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="popover-img">
+            <img src="./resources/images/maps/calcity.jpg" alt="Calumet City"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-row">
+        <div class="map-img left-img clip-left-container">
+          <div class="img-container clip-left-img">
+            <img src="./resources/images/maps/chicago.jpg" alt="Chicago" />
+          </div>
+        </div>
+        <div class="map-description right-description">
+          <h2 class="content-title">CHICAGO</h2>
+          <div class="content-divider"></div>
+          <p class="content-desc">
+            The Chicago yard is located at 9746 South Avenue North, Chicago, IL
+            60617.
+          </p>
+          <button class="map-link orange-btn content-link" popovertarget="chicago-popover">VIEW MAP</button>
+        </div>
+        <div class="popover" id="chicago-popover" popover>
+          <div class="popover-title">
+            <h3>CHICAGO</h3>
+            <button class="popover-close" popovertarget="chicago-popover" popovertargetaction="hide"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="popover-img">
+            <img src="./resources/images/maps/chicago.jpg" alt="Chicago"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-row">
+        <div class="map-img right-img clip-right-container">
+          <div class="img-container clip-right-img">
+            <img src="./resources/images/maps/dolton.jpg" alt="Dolton" />
+          </div>
+        </div>
+        <div class="map-description left-description">
+          <h2 class="content-title">DOLTON</h2>
+          <div class="content-divider"></div>
+          <p class="content-desc">
+            The Dolton yard is located at Cottage Grove Avenue, Dolton, IL
+            60419.
+          </p>
+          <button class="map-link orange-btn content-link" popovertarget="dolton-popover">VIEW MAP</button>
+        </div>
+        <div class="popover" id="dolton-popover" popover>
+          <div class="popover-title">
+            <h3>DOLTON</h3>
+            <button class="popover-close" popovertarget="dolton-popover" popovertargetaction="hide"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="popover-img">
+            <img src="./resources/images/maps/dolton.jpg" alt="Dolton"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-row">
+        <div class="map-img left-img clip-left-container">
+          <div class="img-container clip-left-img">
+            <img src="./resources/images/maps/east-chi.jpg" alt="East Chicago Yard" />
+          </div>
+        </div>
+        <div class="map-description right-description">
+          <h2 class="content-title">EAST CHICAGO</h2>
+          <div class="content-divider"></div>
+          <p class="content-desc">
+            The East Chicago yard is located at 3821 Michigan Avenue, East
+            Chicago, IN 46312.
+          </p>
+          <button class="map-link orange-btn content-link" popovertarget="ec-popover">VIEW MAP</button>
+        </div>
+        <div class="popover" id="ec-popover" popover>
+          <div class="popover-title">
+            <h3>EAST CHICAGO</h3>
+            <button class="popover-close" popovertarget="ec-popover" popovertargetaction="hide"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="popover-img">
+            <img src="./resources/images/maps/east-chi.jpg" alt="East Chicago Yard"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-row">
+        <div class="map-img right-img clip-right-container">
+          <div class="img-container clip-right-img">
+            <img src="./resources/images/maps/gibson.jpg" alt="Gibson Yard" />
+          </div>
+        </div>
+        <div class="map-description left-description">
+          <h2 class="content-title">GIBSON</h2>
+          <div class="content-divider"></div>
+          <p class="content-desc">The Gibson yard is located in Hammond & East Chicago.</p>
+          <button class="map-link orange-btn content-link" popovertarget="gibson-popover">VIEW MAP</button>
+        </div>
+        <div class="popover" id="gibson-popover" popover>
+          <div class="popover-title">
+            <h3>GIBSON</h3>
+            <button class="popover-close" popovertarget="gibson-popover" popovertargetaction="hide"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="popover-img">
+            <img src="./resources/images/maps/gibson.jpg" alt="Gibson Yard"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-row">
+        <div class="map-img left-img clip-left-container">
+          <div class="img-container clip-left-img">
+            <img src="./resources/images/maps/hammond.jpg" alt="Hammond Yard" />
+          </div>
+        </div>
+        <div class="map-description right-description">
+          <h2 class="content-title">HAMMOND</h2>
+          <div class="content-divider"></div>
+          <p class="content-desc">
+            The Hammond yard is located at 2721 161st Street, Hammond, IN 46323.
+          </p>
+          <button class="map-link orange-btn content-link" popovertarget="hammond-popover">VIEW MAP</button>
+        </div>
+        <div class="popover" id="hammond-popover" popover>
+          <div class="popover-title">
+            <h3>HAMMOND</h3>
+            <button class="popover-close" popovertarget="hammond-popover" popovertargetaction="hide"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="popover-img">
+            <img src="./resources/images/maps/hammond.jpg" alt="Hammond Yard"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-row">
+        <div class="map-img right-img clip-right-container">
+          <div class="img-container clip-right-img">
+            <img src="./resources/images/maps/inland.jpg" alt="Inland / LTV" />
+          </div>
+        </div>
+        <div class="map-description left-description">
+          <h2 class="content-title">INLAND / LTV STEEL</h2>
+          <div class="content-divider"></div>
+          <p class="content-desc">
+            The Inland / LTV Steel yard is located at 3001 Dickey Road, East
+            Chicago, IN 46312.
+          </p>
+          <button class="map-link orange-btn content-link" popovertarget="inland-popover">VIEW MAP</button>
+        </div>
+        <div class="popover" id="inland-popover" popover>
+          <div class="popover-title">
+            <h3>INLAND / LTV STEEL</h3>
+            <button class="popover-close" popovertarget="inland-popover" popovertargetaction="hide"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="popover-img">
+            <img src="./resources/images/maps/inland.jpg" alt="Inland / LTV"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-row">
+        <div class="map-img left-img clip-left-container">
+          <div class="img-container clip-left-img">
+            <img src="./resources/images/maps/lagrange.jpg" alt="LaGrange Yard" />
+          </div>
+        </div>
+        <div class="map-description right-description">
+          <h2 class="content-title">LAGRANGE</h2>
+          <div class="content-divider"></div>
+          <p class="content-desc">The LaGrange yard is located in LaGrange, IL.</p>
+          <button class="map-link orange-btn content-link" popovertarget="lagrange-popover">VIEW MAP</button>
+        </div>
+        <div class="popover" id="lagrange-popover" popover>
+          <div class="popover-title">
+            <h3>LAGRANGE</h3>
+            <button class="popover-close" popovertarget="lagrange-popover" popovertargetaction="hide"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="popover-img">
+            <img src="./resources/images/maps/lagrange.jpg" alt="LaGrange Yard"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-row">
+        <div class="map-img right-img clip-right-container">
+          <div class="img-container clip-right-img">
+            <img src="./resources/images/maps/norpaul.jpg" alt="Norpaul Yard" />
+          </div>
+        </div>
+        <div class="map-description left-description">
+          <h2 class="content-title">NORPAUL</h2>
+          <div class="content-divider"></div>
+          <p class="content-desc">
+            The Norpaul yard is located at 9400 Fullerton Street, Franklin Park,
+            IL 60131.
+          </p>
+          <button class="map-link orange-btn content-link" popovertarget="norpaul-popover">VIEW MAP</button>
+        </div>
+        <div class="popover" id="norpaul-popover" popover>
+          <div class="popover-title">
+            <h3>NORPAUL</h3>
+            <button class="popover-close" popovertarget="norpaul-popover" popovertargetaction="hide"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="popover-img">
+            <img src="./resources/images/maps/norpaul.jpg" alt="Norpaul Yard"/>
           </div>
         </div>
       </div>

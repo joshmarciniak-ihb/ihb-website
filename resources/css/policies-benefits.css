@@ -1,0 +1,259 @@
+.policies-benefits-grid {
+    background-color: #F5F5F5;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    margin-top: 3rem;
+}
+
+.policies-image {
+    grid-area: 1 / 1 / 2 / 1;
+    justify-self: end;
+    width: 100%;
+}
+
+.policies-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.policies-card {
+    grid-area: 1 / 1 / 2 / 2;
+    align-self: center;
+    justify-self: center;
+    background-color: white;
+    padding: 2rem;
+    text-align: center;
+    width: 90%;
+    margin-top:250px;
+    height: auto;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 2 2 3px #ccc;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.policies-card li {
+    text-align: start;
+    list-style-type: none;
+    margin-bottom: 1rem;
+
+}
+
+.policies-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.policies-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.policies-content-col {
+    width: 50%;
+}
+
+.policies-content-col li {
+    margin-top: 0.5rem;
+    list-style-type: none;
+    word-wrap: break-word;
+}
+
+.policies-content-col a {
+    font-size: 1.3rem;
+    color: black;
+}
+
+.policies-content-col a:hover {
+    color: rgba(244, 116, 6, 1);
+}
+
+.benefits-wrapper {
+    grid-area: 2 / 1 / 2 / 1;
+}
+
+.benefits-wrapper,
+.benefits,
+.benefits-accordion {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.benefits-wrapper {
+    margin-top: 3rem;
+    padding: 2rem;
+}
+
+.benefits {
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 2 2 3px #ccc;
+}
+
+.benefits-title {
+    padding: 2rem;
+    background-color: white;
+}
+
+.benefits-title h2 {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-decoration-color: rgba(244, 116, 6, 1);
+}
+
+.benefits-accordion-tab {
+    width: 100%;
+    border-top: 1px solid #4e4e4e;
+}
+
+.benefits-accordion-tab-title {
+    display: flex;
+    flex-direction: row;
+}
+
+.b-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 1.5rem;
+    text-align: start;
+    border: none;
+    cursor: pointer;
+}
+
+.b-tab-title {
+    width: 95%;
+}
+
+.b-tab-icon {
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+}
+
+.closed-icon,
+.open-icon {
+    font-size: 26px;
+    color: rgba(244, 116, 6, 1);
+    display: none;
+}
+
+.closed-icon:hover,
+.open-icon:hover {
+    cursor: pointer;
+}
+
+.b-tab-icon>.open-icon {
+    display: none;
+}
+
+.benefits-accordion-tab-content {
+    max-height: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+    animation: fadeOut .5s both;
+}
+
+.benefits-accordion-tab-content.open {
+    padding: 1.5rem;
+    height: auto;
+    transition: .5s;
+    animation: fadeIn 1s .25s both;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.benefits-content-row {
+    display: flex;
+    column-gap: 4rem;
+}
+
+
+.benefits-accordion-tab-content a {
+    color: rgba(244, 116, 6, 1);
+}
+
+.benefits-accordion-tab-content li {
+    list-style-type: none;
+    font-size: 1.3rem;
+}
+
+.benefits-col-header {
+    font-size: 1.5rem;
+    color: rgba(244, 116, 6, 1);
+}
+
+.benefits-link {
+    color: white !important;
+}
+
+.benefits-content-col li {
+    list-style-type: circle;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .policies-benefits-grid {
+        padding: 0;
+        justify-items: center;
+    }
+
+    .policies-image {
+        margin: 0;
+        padding: 0;
+        grid-area: 1 / 1;
+    }
+
+    .policies-card {
+        margin: 0;
+        margin-top: 250px;
+        grid-area: 1 / 1 / 2 / 1;
+    }
+
+    .policies-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .policies-content-col {
+        width: 100%;
+    }
+
+    .benefits-wrapper {
+        width: 100%;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .benefits {
+        width: 100%;
+    }
+
+    .benefits-accordion-tab-content.open {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .benefits-content-row {
+        flex-direction: column;
+        row-gap: 2rem;
+        word-wrap: break-word;
+    }
+}

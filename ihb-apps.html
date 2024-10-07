@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./resources/css/styles.css" />
-    <link rel="stylesheet" href="./resources/css/index.css" />
+    <link rel="stylesheet" href="./resources/css/ihb-apps.css" />
     <link rel="stylesheet" href="./resources/css/header.css" />
     <link rel="stylesheet" href="./resources/css/footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,20 +17,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
-
     <script src="./resources/js/header.js"></script>
-    <script src="./resources/js/carousel.js"></script>
     <script src="./resources/js/accordion.js"></script>
-    <title>Indiana Harbor Belt Railroad | Home</title>
+    <title>Indiana Harbor Belt Railroad | IHB Apps</title>
     <link rel="icon" type="image/x-icon" href="./resources/images/ihb-logo.ico">
   </head>
   <body>
     <div class="header-grid">
-      <div class="header">
+      <div class="header header-static">
         <div class="logo">
-          <a href="/"
-            ><img src="./resources/images/ihb-logo.png" alt="IHB Logo"
-          /></a>
+          <a href="/"><img src="./resources/images/ihb-logo.png" alt="IHB Logo" /></a>
         </div>
         <div class="navigation">
           <div class="top-nav-items">
@@ -54,7 +50,7 @@
               <a class="title">EMPLOYEES</a>
               <div class="subnav-content">
                 <div class="subnav-content-col">
-                  <a href="./employees.html">EMPLOYEES</a>
+                  <a href="/employees.html">EMPLOYEES</a>
                   <a href="./ihb-apps.html">IHB APPS</a>
                   <a
                     href="https://www2.nscorp.com/WebConnect/wcLogin.jsp"
@@ -88,8 +84,8 @@
                 </div>
                 <div class="subnav-content-col">
                   <a href="./business-development.html">BUSINESS DEVELOPMENT</a>
-                  <a href="./maps.html">MAPS</a>
                   <a href="./services.html">SERVICES</a>
+                  <a href="./maps.html">MAPS</a>
                 </div>
               </div>
             </div>
@@ -136,7 +132,9 @@
               <div class="nav-menu-accordion-tab-content accordion-content">
                 <a class="menu-item" href="./employees.html">EMPLOYEES</a>
 
-                <a class="menu-item" href="./ihb-apps.html">IHB APPS</a>
+                <a class="menu-item" href="./ihb-apps.html"
+                  >IHB APPS</a
+                >
 
                 <a
                   class="menu-item"
@@ -246,201 +244,136 @@
         </div>
       </div>
 
-      <div class="carousel-wrapper">
-        <div class="carousel" role="group">
-          <div role="group" class="carousel__navdots home-page">
-            <button type="button"></button>
-            <button type="button"></button>
-            <button type="button"></button>
-          </div>
-          <div class="carousel__slides">
-            <div class="carousel__slide" role="group">
-              <img
-                class="banner-img"
-                src="./resources/images/banners/ihb-engine-hero1.jpg"
-                alt="IHB Engine"
-              />
-              <div class="slide-content">
-                <div class="slide-info">
-                  <h1 class="hero-title">
-                    SAFETY IS OUR PRIORITY<br />SERVICE IS OUR SPECIALTY
-                  </h1>
-                  <a class="orange-btn hero-links" href="./about-us.html"
-                    >LEARN MORE</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="carousel__slide" role="group">
-              <img
-                class="banner-img"
-                src="./resources/images/banners/ihb-building-hero.jpg"
-                alt="IHB Main Office"
-              />
-              <div class="slide-content">
-                <div class="slide-info">
-                  <h1 class="hero-title">
-                    COMMITTED TO<br />EXCEPTIONAL SERVICE
-                  </h1>
-                  <a
-                    class="orange-btn hero-links"
-                    href="./business-development.html"
-                    >LEARN MORE</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="carousel__slide" role="group">
-              <img
-                class="banner-img"
-                src="./resources/images/banners/map-hero.jpg"
-                alt="IHB Tracks Map"
-              />
-              <div class="slide-content">
-                <div class="slide-info">
-                  <h1 class="hero-title">
-                    CONNECTING WITH ALL<br />CHICAGO RAILROADS
-                  </h1>
-                  <a class="orange-btn hero-links" href="./maps.html"
-                    >LEARN MORE</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="hero-img-grid">
+        <div class="hero-img">
+          <img class="banner-img" src="./resources/images/banners/ihb-apps-hero.jpg" alt="">
+        </div>
+        <div class="hero-img-content">
+          <h1>IHB APPS</h1>
         </div>
       </div>
 
       <div class="quick-links">
         <div class="quick-links-col">
           <a class="quick-link" href="./employees.html">EMPLOYEE RESOURCES</a>
-          <a class="quick-link" href="./ihb-apps.html">IHB APPS</a>
+          <a class="quick-link" href="./questions.html">SUBMIT A QUESTION</a>
         </div>
         <div class="quick-links-col">
-          <a
-            class="quick-link"
-            href="https://newerc.nscorp.com/irj/portal"
-            target="_blank"
+          <a class="quick-link" href="https://newerc.nscorp.com/irj/portal" target="_blank"
             >ERC</a
           >
-          <a
-            class="quick-link"
-            href="https://ihb1.maxaccel.com/SafeTrack/"
-            target="_blank"
+          <a class="quick-link" href="https://ihb1.maxaccel.com/SafeTrack/" target="_blank"
             >SAFETRACK</a
           >
         </div>
       </div>
     </div>
 
-    <div class="content-grid">
-      <div class="ms">
-        <h1 class="content-title">Connecting Industries, Empowering Growth</h1>
-        <div class="title-divider"></div>
-        <div class="ms-content">
+    <div class="page-title-wrapper">
+      <div class="page-title">
+        <div class="page-title-title">
+          <h1 class="content-title">Find Your System</h1>
+          <div class="title-divider"></div>
+        </div>
+        <div class="page-title-content">
           <p class="content-desc">
-            At Indiana Harbor Belt, we are committed to delivering comprehensive
-            rail solutions tailored to the needs of our diverse industrial
-            clientele. With a robust network of 160 customers and an annual
-            volume of 170,000 carloads, we specialize in efficient industrial
-            switching and seamless interchanges with 16 rail carriers in
-            Chicago.
+            Access the commonly utilized IHB APP systems and explore the
+            available IHB applications. Please note that most systems
+            necessitate a login for access.
           </p>
-          <a class="orange-btn ms-link content-link" href="./about-us.html"
-            >MORE ABOUT US</a
-          >
         </div>
       </div>
+    </div>
 
-      <div class="eo-wrapper">
-        <div class="eo-content">
-          <h2 class="eo-content-title content-title">SAFETY IS OUR PRIORITY</h2>
-          <div class="eo-content-body">
-            <div class="content-divider"></div>
-            <p class="content-desc">
-              Explore employment opportunities to become a part of our team and
-              help us drive a mission focused on delivering secure and
-              dependable service to our customers. We believe that our employees
-              are our greatest asset, and their safety is our top priority. Rail
-              transportation is already the safest method for freight movement,
-              and we’re dedicated to making it even safer.
-            </p>
-            <a class="orange-btn content-link" href="./careers.html"
-              >VIEW EMPLOYMENT OPPORTUNITIES</a
+    <div class="ihb-apps-grid">
+      <div class="ihb-apps-card">
+        <div class="ihb-apps-card-content">
+          <h3>HOURS OF SERVICE</h3>
+          <div class="card-divider"></div>
+          <div class="ihb-apps-card-links">
+            <a
+              href="http://babylon1/apps-p/hos/me-menu/hoursemfpass.php"
+              target="_blank"
+              >Hours of Service System</a
             >
-          </div>
-        </div>
-        <div class="eo-image right-img clip-right-container content-img">
-          <div class="img-container clip-right-img">
-            <img src="./resources/images/ihb-blue.jpg" alt="Blue Island Yard" />
           </div>
         </div>
       </div>
-
-      <div class="body-menu-wrapper">
-        <div class="body-menu">
-          <div class="body-menu-item card">
-            <img
-              src="./resources/images/roundhouse.jpg"
-              alt="IHB Gibson Roundhouse"
-            />
-            <div class="body-menu-item-content">
-              <h2>WHAT DO WE DO?</h2>
-              <div class="card-divider"></div>
-              <p>
-                We are a Class III railroad and the largest switch carrier in
-                the United States, operating a comprehensive network of 320
-                miles (510 km) of track. We proudly serve 160 industries,
-                transporting a diverse range of products, including steel,
-                petroleum, chemicals, manufactured goods, and food products.
-              </p>
-            </div>
-            <a class="body-menu-link orange-btn" href="./about-us.html"
-              >MORE ABOUT US</a
+      <div class="ihb-apps-card">
+        <div class="ihb-apps-card-content">
+          <h3>M OF W INSPECTIONS</h3>
+          <div class="card-divider"></div>
+          <div class="ihb-apps-card-links">
+            <a
+              href="http://www.ihbrr.com/apps-p/bridges_ap/bridgemain2.php"
+              target="_blank"
+              >Bridge Management System</a
+            >
+            <a
+              href="http://www.ihbrr.com/apps-p/mofwinspect/main_menu.php"
+              target="_blank"
+              >M of W Track Inspections System</a
             >
           </div>
-          <div class="body-menu-item card">
-            <img src="./resources/images/rails.jpg" alt="Locomotive Rails" />
-            <div class="body-menu-item-content">
-              <h2>WHERE ARE WE LOCATED?</h2>
-              <div class="card-divider"></div>
-              <p>
-                Our main office is located at 2721 161st St, Hammond, IN. Our
-                Blue Island yard in Riverdale, IL, is our largest, while the
-                Gibson Yard in Hammond is among the largest automobile traffic
-                switching operations in the United States. Additional key yards
-                in our network include Burnham, Calumet City, Alsip, Argo,
-                LaGrange, Norpaul, and Michigan Avenue.
-              </p>
-            </div>
-            <a class="body-menu-link orange-btn" href="./maps.html"
-              >VIEW OUR YARDS</a
+        </div>
+      </div>
+      <div class="ihb-apps-card">
+        <div class="ihb-apps-card-content">
+          <h3>SIGNAL INSPECTIONS</h3>
+          <div class="card-divider"></div>
+          <div class="ihb-apps-card-links">
+            <a href="http://www.raildocs.net/" target="_blank"
+              >RailDOCS System</a
             >
           </div>
-          <div class="body-menu-item card">
-            <img src="./resources/images/question.jpg" alt="Ask a Question" />
-            <div class="body-menu-item-content">
-              <h2>HAVE A QUESTION?</h2>
-              <div class="card-divider"></div>
-              <p>
-                Have a question about the Indiana Harbor Belt Railroad? For
-                inquiries, support, or further information, please visit our
-                Contact Us page. Our team is ready to assist you and will
-                respond promptly to your questions or concerns.
-              </p>
-              <br />
-              <p>
-                For emergencies call
-                <a class="tel-link" href="tel:219-989-4759">219-989-4759</a>
-              </p>
-            </div>
-            <a class="body-menu-link orange-btn" href="./contact-us.html"
-              >ASK A QUESTION</a
+        </div>
+      </div>
+      <div class="ihb-apps-card">
+        <div class="ihb-apps-card-content">
+          <h3>PAYROLL CLAIMS</h3>
+          <div class="card-divider"></div>
+          <div class="ihb-apps-card-links">
+            <a
+              href="http://www.ihbrr.com/apps-p/te_payroll_claims/"
+              target="_blank"
+              >T&E Payroll Claims System</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="ihb-apps-card">
+        <div class="ihb-apps-card-content">
+          <h3>T&E REPORTS</h3>
+          <div class="card-divider"></div>
+          <div class="ihb-apps-card-links">
+            <a
+              href="http://www.ihbrr.com/apps-p/fme_ride_form/index.php"
+              target="_blank"
+              >Field Manager Evaluation Ride Form</a
+            >
+            <a
+              href="http://www.ihbrr.com/apps-p/industry_safety_report/index.php"
+              target="_blank"
+              >Industry Safety Report</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="ihb-apps-card">
+        <div class="ihb-apps-card-content">
+          <h3>FMLA MANAGEMENT</h3>
+          <div class="card-divider"></div>
+          <div class="ihb-apps-card-links">
+            <a
+              href="http://web001-a/apps-p/hr_lr/fmla/v2/super/index.php"
+              target="_blank"
+              >FMLA Management - Supervisor Dashboard</a
             >
           </div>
         </div>
       </div>
     </div>
+
     <footer>
       <div class="footer-wrapper-desktop">
         <div class="footer-desktop">

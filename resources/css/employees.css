@@ -1,0 +1,73 @@
+.employee-info-grid {
+    margin-top: 3rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 2rem;
+    justify-items: center;
+    background-color: #F5F5F5;
+}
+
+.content-desc {
+    text-align: center;
+}
+
+.employee-info-card {
+    width: 90%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 2 2 3px #ccc;
+}
+
+.employee-info-card-content {
+    padding: 2rem;
+}
+
+.employee-info-card-img {
+    width: 100%;
+}
+
+.employee-info-card-image img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.employee-info-card-content h2 {
+    margin-bottom: 1rem;
+}
+
+.employee-info-card-content p {
+    margin-top: 1rem;
+}
+
+.tile-link {
+    width: 90%;
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 992px) {
+    .employee-info-grid {
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .employee-info-grid {
+        grid-template-columns: 1fr;
+        padding: 2rem 0 2rem 0;
+        width: 100%;
+    }
+
+    .employee-info-card {
+        width: 100%;
+    }
+}

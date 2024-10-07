@@ -1,0 +1,116 @@
+.resources-wrapper {
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: #F5F5F5;
+}
+
+.resources-wrapper,
+.resources,
+.resources-accordion {
+    display: flex;
+    width: 100%;
+}
+
+.resources-grid {
+    display: grid;
+    margin-top: 3rem;
+    background-color: #F5F5F5;
+}
+
+.resources {
+    display: flex;
+    flex-direction: column;
+    -moz-box-shadow: 0 0 3px #8a8a8a;
+    -webkit-box-shadow: 0 0 3px #8a8a8a;
+    box-shadow: 2 2 3px #8a8a8a;
+}
+
+.resources-title {
+    padding: 1.5rem;
+    background-color: white;
+}
+
+.resources-title h2 {
+    text-decoration: underline;
+    text-decoration-thickness: 0.25rem;
+    text-decoration-color: rgba(244, 116, 6, 1);
+
+}
+
+.resources-accordion,
+.resources-accordion-tab {
+    flex-direction: column;
+}
+
+.resources-accordion-tab {
+    width: 100%;
+    border-top: 1px solid #4e4e4e;
+}
+
+.resources-accordion-tab-title {
+    display: flex;
+    flex-direction: row;
+}
+
+.ra-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 1.5rem;
+    text-align: start;
+    border: none;
+    cursor: pointer;
+}
+
+.ra-tab-title {
+    width: 95%;
+}
+
+.ra-tab-icon {
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+}
+
+.closed-icon,
+.open-icon {
+    font-size: 1.5rem;
+    color: rgba(244, 116, 6, 1);
+    display: none;
+}
+
+.closed-icon:hover,
+.open-icon:hover {
+    cursor: pointer;
+}
+
+.ra-tab-icon>.open-icon {
+    display: none;
+}
+
+.resources-accordion-tab-content {
+    max-height: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+    animation: fadeOut .5s both;
+}
+
+.resources-accordion-tab-content.open {
+    padding: 1.5rem;
+    height: auto;
+    transition: .5s;
+    animation: fadeIn 1s .25s both;
+}
+
+.resources-accordion-tab-content a {
+    color: rgba(244, 116, 6, 1);
+}
+
+.resources-accordion-tab-content li {
+    list-style-type: none;
+}
