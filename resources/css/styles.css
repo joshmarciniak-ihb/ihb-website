@@ -337,6 +337,10 @@ h3 {
     font-style: italic;
 }
 
+.accordion-content.open {
+    animation: slideDown 1s;
+}
+
 @media only screen and (max-width: 768px) {
     .page-title-wrapper {
         justify-content: start;

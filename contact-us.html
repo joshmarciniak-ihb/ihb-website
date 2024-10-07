@@ -19,14 +19,21 @@
     />
 
     <script src="./resources/js/header.js"></script>
+    <script src="./resources/js/accordion.js"></script>
     <title>Indiana Harbor Belt Railroad | About Us</title>
-    <link rel="icon" type="image/x-icon" href="./resources/images/ihb-logo.ico">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./resources/images/ihb-logo.ico"
+    />
   </head>
   <body>
     <div class="header-grid">
       <div class="header header-static">
         <div class="logo">
-          <a href="/"><img src="./resources/images/ihb-logo.png" alt="IHB Logo" /></a>
+          <a href="/"
+            ><img src="./resources/images/ihb-logo.png" alt="IHB Logo"
+          /></a>
         </div>
         <div class="navigation">
           <div class="top-nav-items">
@@ -93,7 +100,13 @@
               <a class="title" href="/about-us.html">ABOUT US</a>
             </div>
             <div class="subnav">
-              <a class="title" href="/contact-us.html">CONTACT US</a>
+              <a class="title">CONTACT</a>
+              <div class="subnav-content">
+                <div class="subnav-content-col">
+                  <a href="./contact-us.html">CONTACT US</a>
+                  <a href="./questions.html">SUBMIT A QUESTION</a>
+                </div>
+              </div>
             </div>
           </div>
           <div id="hamburger-btn" class="hamburger-menu">
@@ -161,7 +174,12 @@
                   >POLICIES & BENEFITS</a
                 >
 
-                <a class="menu-item" href="https://newerc.nscorp.com/irj/portal" target="_blank">ERC</a>
+                <a
+                  class="menu-item"
+                  href="https://newerc.nscorp.com/irj/portal"
+                  target="_blank"
+                  >ERC</a
+                >
 
                 <a
                   class="menu-item"
@@ -212,10 +230,21 @@
             <div class="nav-menu-accordion-tab accordion-tab">
               <div class="nav-menu-accordion-tab-button">
                 <div class="nav-menu-button accordion-button">
-                  <a class="nav-menu-tab-title" href="./contact-us.html"
-                    ><h2>CONTACT US</h2></a
-                  >
+                  <span class="nav-menu-tab-title">
+                    <h2>CONTACT</h2>
+                  </span>
+                  <span class="nav-menu-tab-icon">
+                    <i class="closed-icon fa-solid fa-chevron-down"></i>
+                    <i class="open-icon fa-solid fa-chevron-up"></i>
+                  </span>
                 </div>
+              </div>
+              <div class="nav-menu-accordion-tab-content accordion-content">
+                <a class="menu-item" href="./contact-us.html">CONTACT US</a>
+
+                <a class="menu-item" href="./questions.html"
+                  >SUBMIT A QUESTION</a
+                >
               </div>
             </div>
           </div>
@@ -261,10 +290,16 @@
           <a class="quick-link" href="./questions.html">SUBMIT A QUESTION</a>
         </div>
         <div class="quick-links-col">
-          <a class="quick-link" href="https://newerc.nscorp.com/irj/portal" target="_blank"
+          <a
+            class="quick-link"
+            href="https://newerc.nscorp.com/irj/portal"
+            target="_blank"
             >ERC</a
           >
-          <a class="quick-link" href="https://ihb1.maxaccel.com/SafeTrack/" target="_blank"
+          <a
+            class="quick-link"
+            href="https://ihb1.maxaccel.com/SafeTrack/"
+            target="_blank"
             >SAFETRACK</a
           >
         </div>
@@ -274,7 +309,9 @@
     <div class="page-title-wrapper">
       <div class="page-title">
         <div class="page-title-title">
-          <h1 class="content-title">CONNECT WITH US: YOUR FEEDBACK IS VALUED</h1>
+          <h1 class="content-title">
+            CONNECT WITH US: YOUR FEEDBACK IS VALUED
+          </h1>
           <div class="title-divider"></div>
         </div>
         <div class="page-title-content">
@@ -573,7 +610,9 @@
             <a href="https://webmail.ihbrr.com/owa" target="_blank">Email</a>
             <a href="./resources.html">Resources</a>
             <a href="./policies-benefits.html">Policies & Benefits</a>
-            <a href="https://newerc.nscorp.com/irj/portal" target="_blank">ERC</a>
+            <a href="https://newerc.nscorp.com/irj/portal" target="_blank"
+              >ERC</a
+            >
             <a href="https://www.theeap.com/" target="_blank">EAP</a>
           </div>
 
@@ -594,7 +633,9 @@
           <div class="footer-col">
             <h3>Local Industries</h3>
             <a href="http://www.csx.com/" target="_blank">CSX</a>
-            <a href="http://www.nscorp.com/" target="_blank">Norfolk Southern</a>
+            <a href="http://www.nscorp.com/" target="_blank"
+              >Norfolk Southern</a
+            >
             <a href="http://www.ihbrr.com/lib/links/bnsflinks/bnsflinks.htm"
               >BNSF Links</a
             >
@@ -606,7 +647,11 @@
           <div class="footer-col">
             <h3>Contact</h3>
             <a href="./contact-us.html">Contact Us</a>
-            <p>Customer Service & Car Tracing: (708) 201-3460</p>
+            <a href="./questions.html">Submit a Question</a>
+            <p>
+              Customer Service & Car Tracing:
+              <a href="tel:708-201-3460">(708) 201-3460</a>
+            </p>
           </div>
         </div>
       </div>
@@ -641,12 +686,16 @@
                 <a href="https://ihb1.maxaccel.com/SafeTrack/" target="_blank"
                   >SafeTrack</a
                 >
-                <a href="https://webmail.ihbrr.com/owa" target="_blank">Email</a>
+                <a href="https://webmail.ihbrr.com/owa" target="_blank"
+                  >Email</a
+                >
                 <a href="./resources.html">Resources</a>
 
                 <a href="./policies-benefits.html">Policies & Benefits</a>
 
-                <a href="https://newerc.nscorp.com/irj/portal" target="_blank">ERC</a>
+                <a href="https://newerc.nscorp.com/irj/portal" target="_blank"
+                  >ERC</a
+                >
 
                 <a href="https://www.theeap.com/" target="_blank">EAP</a>
               </div>
@@ -664,13 +713,11 @@
                 </div>
               </div>
               <div class="fa-submenu accordion-content">
-                <ul class="fa-submenu-items">
-                  <li><a href="./services.html">Services</a></li>
-                  <li><a href="./safety-hotline.html">Safety Hotline</a></li>
-                  <li><a href="./bulletins.html">Bulletins</a></li>
-                  <li><a href="./tariffs.html">Tariffs</a></li>
-                  <li><a href="./maps.html">Maps</a></li>
-                </ul>
+                <a href="./services.html">Services</a>
+                <a href="./safety-hotline.html">Safety Hotline</a>
+                <a href="./bulletins.html">Bulletins</a>
+                <a href="./tariffs.html">Tariffs</a>
+                <a href="./maps.html">Maps</a>
               </div>
             </div>
             <div class="fa-tab accordion-tab">
@@ -686,14 +733,8 @@
                 </div>
               </div>
               <div class="fa-submenu accordion-content">
-                <ul class="fa-submenu-items">
-                  <li><a href="./about-us.html">About Us</a></li>
-                  <li>
-                    <a href="./business-development.html"
-                      >Business Development</a
-                    >
-                  </li>
-                </ul>
+                <a href="./about-us.html">About Us</a>
+                <a href="./business-development.html">Business Development</a>
               </div>
             </div>
             <div class="fa-tab accordion-tab">
@@ -709,21 +750,16 @@
                 </div>
               </div>
               <div class="fa-submenu accordion-content">
-                <ul class="fa-submenu-items">
-                  <li><a href="http://www.csx.com/" target="_blank">CSX</a></li>
-                  <li><a href="http://www.nscorp.com/" target="_blank">Norfolk Southern</a></li>
-                  <li>
-                    <a
-                      href="http://www.ihbrr.com/lib/links/bnsflinks/bnsflinks.htm"
-                      >BNSF Links</a
-                    >
-                  </li>
-                  <li>
-                    <a href="http://www.ihbrr.com/lib/links/uplinks/uplinks.htm"
-                      >UP Links</a
-                    >
-                  </li>
-                </ul>
+                <a href="http://www.csx.com/" target="_blank">CSX</a>
+                <a href="http://www.nscorp.com/" target="_blank"
+                  >Norfolk Southern</a
+                >
+                <a href="http://www.ihbrr.com/lib/links/bnsflinks/bnsflinks.htm"
+                  >BNSF Links</a
+                >
+                <a href="http://www.ihbrr.com/lib/links/uplinks/uplinks.htm"
+                  >UP Links</a
+                >
               </div>
             </div>
             <div class="fa-tab accordion-tab">
@@ -739,10 +775,12 @@
                 </div>
               </div>
               <div class="fa-submenu accordion-content">
-                <ul class="fa-submenu-items">
-                  <li><a href="./contact-us.html">Contact Us</a></li>
-                  <li>Customer Service & Car Tracing: (708) 201-3460</li>
-                </ul>
+                  <a href="./contact-us.html">Contact Us</a>
+                  <a href="./questions.html">Submit a Question</a>
+                  <p>
+                    Customer Service & Car Tracing:
+                    <a href="tel:708-201-3460">(708) 201-3460</a>
+                  </p>
               </div>
             </div>
           </div>
@@ -751,5 +789,4 @@
     </footer>
     <script src="./resources/js/observer.js"></script>
   </body>
-  
 </html>
