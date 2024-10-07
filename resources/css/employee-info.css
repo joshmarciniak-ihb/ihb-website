@@ -114,3 +114,13 @@
 .resources-accordion-tab-content li {
     list-style-type: none;
 }
+
+@media only screen and (max-width: 992px) {
+    .resources-wrapper {
+        padding: 2rem 0 2rem 0;
+    }
+
+    .resources {
+        width: 100%;
+    }
+}
