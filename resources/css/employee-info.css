@@ -1,3 +1,4 @@
+/* EMPLOYEE INFO PAGE STYLES */
 .resources-wrapper {
     margin-top: 3rem;
     padding: 2rem;
@@ -36,6 +37,8 @@
     text-decoration-color: rgba(244, 116, 6, 1);
 
 }
+
+/* INFO ACCORDION STYLES */
 
 .resources-accordion,
 .resources-accordion-tab {
@@ -96,15 +99,15 @@
     max-height: 100%;
     height: 0;
     overflow: hidden;
-    transition: .5s;
-    animation: fadeOut .5s both;
+    transition: .25s;
+    animation: fadeOut .25s both;
 }
 
 .resources-accordion-tab-content.open {
     padding: 1.5rem;
     height: auto;
     transition: .5s;
-    animation: fadeIn 1s .25s both;
+    animation: fadeIn .5s both;
 }
 
 .resources-accordion-tab-content a {
@@ -115,6 +118,7 @@
     list-style-type: none;
 }
 
+/* EMPLOYEE INFO STYLES - MOBILE */
 @media only screen and (max-width: 992px) {
     .resources-wrapper {
         padding: 2rem 0 2rem 0;

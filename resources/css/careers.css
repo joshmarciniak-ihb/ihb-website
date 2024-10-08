@@ -10,6 +10,7 @@
 .careers-overview {
     grid-row: 1;
     display: flex;
+    column-gap: 2rem;
     padding: 2rem;
 }
 
@@ -22,7 +23,7 @@
 
 .careers-overview-content {
     padding: 2rem;
-    width: 35%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;

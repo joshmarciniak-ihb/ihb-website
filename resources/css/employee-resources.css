@@ -1,3 +1,4 @@
+/* EMPLOYEE INFO GRID STYLES */
 .employee-info-grid {
     margin-top: 3rem;
     padding: 2rem;
@@ -8,6 +9,7 @@
     background-color: #F5F5F5;
 }
 
+/* EMPLOYEE INFO CARDS SECTION STYLES */
 .content-desc {
     text-align: center;
 }
@@ -52,6 +54,7 @@
     margin-bottom: 1rem;
 }
 
+/* EMPLOYEE RESOURCES STYLES - MOBILE */
 @media only screen and (max-width: 992px) {
     .employee-info-grid {
         grid-template-columns: 1fr 1fr;

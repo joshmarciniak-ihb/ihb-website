@@ -1,11 +1,4 @@
-.page-title-wrapper {
-    margin-bottom: 3rem;
-}
-
-.page-title-title {
-    width: 100%;
-}
-
+/* IHB APPS GRID STYLES */
 .ihb-apps-grid {
     margin-top: 3rem;
     padding: 2rem;
@@ -15,6 +8,8 @@
     justify-items: center;
     background-color: #F5F5F5;
 }
+
+/* IHB APPS CARD SECTION STYLES */
 
 .ihb-apps-card {
     display: flex;
@@ -58,6 +53,8 @@
 .ihb-apps-card-links a:hover {
     background-color: rgb(243, 132, 35);
 }
+
+/* IHB APPS STYLES - MOBILE */
 
 @media only screen and (max-width: 992px) {
     .ihb-apps-grid {

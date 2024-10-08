@@ -384,4 +384,13 @@ h3 {
         -webkit-box-shadow: 0 0 3px rgb(54, 54, 54);
         box-shadow: 2 2 3px rgb(54, 54, 54);
     }
+
+    .clip-left-container {
+        backface-visibility: visible;
+    
+    }
+    
+    .clip-right-container {
+        backface-visibility: visible;
+    }
 }

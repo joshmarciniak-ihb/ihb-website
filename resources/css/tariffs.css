@@ -1,13 +1,4 @@
-.page-title-content a {
-    text-decoration: none;
-    color: rgba(244, 116, 6, 1);
-
-}
-
-.page-title-content a:hover {
-    color: rgb(243, 132, 35);
-}
-
+/* TARIFFS PAGE STYLES */
 .tariffs-flex {
     margin-top: 3rem;
     padding-bottom: 2rem;
@@ -99,6 +90,7 @@
     text-decoration: none;
 }
 
+/* TARIFFS PAGE STYLES - MOBILE */
 @media only screen and (max-width: 992px) {
     .tariff-info {
         flex-direction: column;

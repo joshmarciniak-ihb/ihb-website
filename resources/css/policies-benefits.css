@@ -1,3 +1,4 @@
+/* POLICIES AND BENEFITS STYLES */
 .policies-benefits-grid {
     background-color: #F5F5F5;
     display: grid;
@@ -5,6 +6,7 @@
     margin-top: 3rem;
 }
 
+/* POLICIES SECTION STYLES */
 .policies-image {
     grid-area: 1 / 1 / 2 / 1;
     justify-self: end;
@@ -25,7 +27,7 @@
     padding: 2rem;
     text-align: center;
     width: 90%;
-    margin-top:250px;
+    margin-top: 250px;
     height: auto;
     -moz-box-shadow: 0 0 3px #ccc;
     -webkit-box-shadow: 0 0 3px #ccc;
@@ -76,6 +78,7 @@
     color: rgba(244, 116, 6, 1);
 }
 
+/* BENEFITS SECTION STYLES */
 .benefits-wrapper {
     grid-area: 2 / 1 / 2 / 1;
 }
@@ -172,7 +175,7 @@
     padding: 1.5rem;
     height: auto;
     transition: .5s;
-    animation: fadeIn 1s .25s both;
+    animation: fadeIn .5s both;
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
@@ -206,7 +209,7 @@
     list-style-type: circle;
 }
 
-
+/* POLICIES AND BENEFITS STYLES - MOBILE */
 @media only screen and (max-width: 992px) {
     .policies-benefits-grid {
         padding: 0;

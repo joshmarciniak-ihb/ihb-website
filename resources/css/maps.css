@@ -1,3 +1,4 @@
+/* MAPS PAGE STYLES */
 .image-zoom {
     display: none;
 }
@@ -141,7 +142,6 @@
     width: 90%;
     height: 90%;
     margin: auto;
-    
 }
 
 .popover:popover-open img {
@@ -149,6 +149,19 @@
     height: 100%;
 }
 
+.popover-close {
+    align-self: center;
+    color: rgba(244, 116, 6, 1);
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+}
+
+.popover-close:hover {
+    color: rgb(243, 132, 35);
+}
+
+/* MAP PAGE STYLES - MOBILE */
 @media only screen and (max-width: 768px) {
 
     .maps-flex {
@@ -258,8 +271,9 @@
     .popover-title {
         height: 10%;
     }
-    
+
     .popover-img {
-        height: 90%;
+        height: auto;
+        margin-top: 2rem;
     }
 }

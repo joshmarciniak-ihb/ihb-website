@@ -158,6 +158,10 @@
     flex-direction: row;
 }
 
+.nav-menu-accordion-tab-button:hover {
+    background-color: rgba(60, 60, 60, 0.9);
+}
+
 .nav-menu-button {
     padding: 1rem;
     display: flex;

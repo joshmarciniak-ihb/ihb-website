@@ -1,3 +1,4 @@
+/* SAFETY HOTLINE PAGE STYLES */
 .safety-hotline-grid {
     margin-top: 3rem;
     padding: 2rem;
@@ -8,6 +9,7 @@
     background-color: #f5f5f5;
 }
 
+/*SAFETY HOTLINE CARDS SECTION STYLES */
 .safety-hotline-card {
     background-color: white;
     width: 90%;
@@ -52,6 +54,7 @@
     align-self: center;
 }
 
+/* SAFETY HOTLINE PAGE STYLES - MOBILE */
 @media only screen and (max-width: 768px) {
     .safety-hotline-grid {
         grid-template-columns: 1fr;

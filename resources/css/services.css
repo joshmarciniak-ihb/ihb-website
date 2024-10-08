@@ -1,3 +1,4 @@
+/* SERVICES PAGE STYLES */
 .services-grid {
     margin-top: 3rem;
     padding: 2rem;
@@ -12,6 +13,7 @@
     text-align: center;
 }
 
+/* SERVICES CARDS SECTION STYLES */
 .services-card {
     width: 90%;
     background-color: white;
@@ -62,6 +64,7 @@
     margin-top: auto;
 }
 
+/* SERVICES PAGE STYLES - MOBILE */
 @media only screen and (max-width: 992px) {
     .services-grid {
         grid-template-columns: 1fr 1fr;

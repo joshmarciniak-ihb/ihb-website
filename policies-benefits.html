@@ -1,1088 +1,928 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./resources/css/styles.css" />
-    <link rel="stylesheet" href="./resources/css/header.css" />
-    <link rel="stylesheet" href="./resources/css/policies-benefits.css" />
-    <link rel="stylesheet" href="./resources/css/footer.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    />
-    <script src="./resources/js/header.js"></script>
-    <script src="./resources/js/accordion.js"></script>
-    <title>Indiana Harbor Belt | Policies & Benefits</title>
-    <link rel="icon" type="image/x-icon" href="./resources/images/ihb-logo.ico">
-  </head>
-  <body>
-    <div class="header-grid">
-      <div class="header header-static">
-        <div class="logo">
-          <a href="/"
-            ><img src="./resources/images/ihb-logo.png" alt="IHB Logo"
-          /></a>
-        </div>
-        <div class="navigation">
-          <div class="top-nav-items">
-            <a href="./careers.html">CAREERS</a>
-            <a href="./ihb-apps.html">IHB APPS</a>
-            <a
-              href="https://www2.nscorp.com/WebConnect/wcLogin.jsp"
-              target="_blank"
-              >NS MAINFRAME</a
-            >
-            <a href="https://ihb1.maxaccel.com/SafeTrack/" target="_blank"
-              >SAFETRACK</a
-            >
-            <a href="https://newerc.nscorp.com/irj/portal" target="_blank"
-              >ERC</a
-            >
-            <a href="https://webmail.ihbrr.com/owa" target="_blank">EMAIL</a>
-          </div>
-          <div class="bottom-nav-items">
-            <div class="subnav">
-              <a class="title">EMPLOYEES</a>
-              <div class="subnav-content">
-                <div class="subnav-content-col">
-                  <a href="/employee-resources.html">RESOURCES</a>
-                  <a href="./ihb-apps.html">IHB APPS</a>
-                  <a
-                    href="https://www2.nscorp.com/WebConnect/wcLogin.jsp"
-                    target="_blank"
-                    >NS MAINFRAME</a
-                  >
-                  <a href="https://ihb1.maxaccel.com/SafeTrack/" target="_blank"
-                    >SAFETRACK</a
-                  >
-                  <a href="https://webmail.ihbrr.com/owa" target="_blank"
-                    >EMAIL</a
-                  >
-                </div>
-                <div class="subnav-content-col">
-                  <a href="/employee-info.html">INFO</a>
-                  <a href="./policies-benefits.html">POLICIES & BENEFITS</a>
-                  <a href="https://newerc.nscorp.com/irj/portal" target="_blank"
-                    >ERC</a
-                  >
-                  <a href="https://www.theeap.com/" target="_blank">EAP</a>
-                </div>
-              </div>
-            </div>
-            <div class="subnav">
-              <a class="title" href="./services.html">SERVICES</a>
-              <div class="subnav-content">
-                <div class="subnav-content-col">
-                  <a href="./safety-hotline.html">SAFETY HOTLINE</a>
-                  <a href="./bulletins.html">BULLETINS</a>
-                  <a href="./tariffs.html">TARIFFS</a>
-                </div>
-                <div class="subnav-content-col">
-                  <a href="./business-development.html">BUSINESS DEVELOPMENT</a>
-                  <a href="./services.html">SERVICES</a>
-                  <a href="./maps.html">MAPS</a>
-                </div>
-              </div>
-            </div>
-            <div class="subnav">
-              <a class="title" href="/about-us.html">ABOUT US</a>
-            </div>
-            <div class="subnav">
-              <a class="title">CONTACT</a>
-              <div class="subnav-content">
-                <div class="subnav-content-col">
-                  <a href="./contact-us.html">CONTACT US</a>
-                  <a href="./questions.html">SUBMIT A QUESTION</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="hamburger-btn" class="hamburger-menu">
-            <input
-              type="checkbox"
-              id="checkbox"
-              class="checkbox3 visuallyHidden"
-            />
-            <label for="checkbox">
-              <div class="hamburger hamburger3">
-                <span class="bar bar1"></span>
-                <span class="bar bar2"></span>
-                <span class="bar bar3"></span>
-                <span class="bar bar4"></span>
-              </div>
-            </label>
-          </div>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./resources/css/styles.css" />
+  <link rel="stylesheet" href="./resources/css/header.css" />
+  <link rel="stylesheet" href="./resources/css/policies-benefits.css" />
+  <link rel="stylesheet" href="./resources/css/footer.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <script src="./resources/js/header.js"></script>
+  <script src="./resources/js/accordion.js"></script>
+  <title>Indiana Harbor Belt | Policies & Benefits</title>
+  <link rel="icon" type="image/x-icon" href="./resources/images/ihb-logo.ico">
+</head>
+
+<body>
+  <div class="header-grid">
+    <div class="header header-static">
+      <div class="logo">
+        <a href="/"><img src="./resources/images/ihb-logo.png" alt="IHB Logo" /></a>
       </div>
-
-      <div class="mobile-nav-menu-wrapper">
-        <div class="mobile-nav-menu">
-          <div class="nav-menu-accordion">
-            <div class="nav-menu-accordion-tab accordion-tab">
-              <div class="nav-menu-accordion-tab-button">
-                <div class="nav-menu-button accordion-button">
-                  <span class="nav-menu-tab-title">
-                    <h2>EMPLOYEES</h2>
-                  </span>
-                  <span class="nav-menu-tab-icon">
-                    <i class="closed-icon fa-solid fa-chevron-down"></i>
-                    <i class="open-icon fa-solid fa-chevron-up"></i>
-                  </span>
-                </div>
-              </div>
-              <div class="nav-menu-accordion-tab-content accordion-content">
-                <a class="menu-item" href="./employee-resources.html">EMPLOYEES</a>
-
-                <a class="menu-item" href="./ihb-apps.html">IHB APPS</a>
-
-                <a
-                  class="menu-item"
-                  href="https://www2.nscorp.com/WebConnect/wcLogin.jsp"
-                  target="_blank"
-                  >NS MAINFRAME</a
-                >
-
-                <a
-                  class="menu-item"
-                  href="https://ihb1.maxaccel.com/SafeTrack/"
-                  target="_blank"
-                  >SAFETRACK</a
-                >
-
-                <a
-                  class="menu-item"
-                  href="https://webmail.ihbrr.com/owa"
-                  target="_blank"
-                  >EMAIL</a
-                >
-
-                <a class="menu-item" href="./resources.html">RESOURCES</a>
-
-                <a class="menu-item" href="./policies-benefits.html"
-                  >POLICIES & BENEFITS</a
-                >
-
-                <a class="menu-item" href="https://newerc.nscorp.com/irj/portal" target="_blank">ERC</a>
-
-                <a
-                  class="menu-item"
-                  href="https://www.theeap.com/"
-                  target="_blank"
-                  >EAP</a
-                >
-              </div>
-            </div>
-            <div class="nav-menu-accordion-tab accordion-tab">
-              <div class="nav-menu-accordion-tab-button">
-                <div class="nav-menu-button accordion-button">
-                  <span class="nav-menu-tab-title">
-                    <h2>SERVICES</h2>
-                  </span>
-                  <span class="nav-menu-tab-icon">
-                    <i class="closed-icon fa-solid fa-chevron-down"></i>
-                    <i class="open-icon fa-solid fa-chevron-up"></i>
-                  </span>
-                </div>
-              </div>
-              <div class="nav-menu-accordion-tab-content accordion-content">
-                <a class="menu-item" href="./safety-hotline.html"
-                  >SAFETY HOTLINE</a
-                >
-                <a class="menu-item" href="./bulletins.html">BULLETINS</a>
-                <a class="menu-item" href="./tariffs.html">TARIFFS</a>
-                <a class="menu-item" href="./resources.html"
-                  >BUSINESS DEVELOPMENT</a
-                >
-                <a class="menu-item" href="./policies-benefits.html"
-                  >CAR TRACE</a
-                >
-                <a class="menu-item" href="https://newerc.nscorp.com/irj/portal"
-                  >MAPS</a
-                >
-              </div>
-            </div>
-            <div class="nav-menu-accordion-tab accordion-tab">
-              <div class="nav-menu-accordion-tab-button">
-                <div class="nav-menu-button accordion-button">
-                  <a class="nav-menu-tab-title" href="./about-us.html"
-                    ><h2>ABOUT US</h2></a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="nav-menu-accordion-tab accordion-tab">
-              <div class="nav-menu-accordion-tab-button">
-                <div class="nav-menu-button accordion-button">
-                  <span class="nav-menu-tab-title">
-                    <h2>CONTACT</h2>
-                  </span>
-                  <span class="nav-menu-tab-icon">
-                    <i class="closed-icon fa-solid fa-chevron-down"></i>
-                    <i class="open-icon fa-solid fa-chevron-up"></i>
-                  </span>
-                </div>
-              </div>
-              <div class="nav-menu-accordion-tab-content accordion-content">
-                <a class="menu-item" href="./contact-us.html">CONTACT US</a>
-
-                <a class="menu-item" href="./questions.html">SUBMIT A QUESTION</a>
-              </div>
-            </div>
-          </div>
-          <div class="nav-menu-links">
-            <div class="nav-menu-links-col">
-              <a href="./careers">CAREERS</a>
-              <a href="./ihb-apps.html">IHB APPS</a>
-              <a
-                href="https://www2.nscorp.com/WebConnect/wcLogin.jsp"
-                target="_blank"
-                >NS MAINFRAME</a
-              >
-            </div>
-            <div class="nav-menu-links-col">
-              <a href="https://ihb1.maxaccel.com/SafeTrack/" target="_blank"
-                >SAFETRACK</a
-              >
-              <a href="https://newerc.nscorp.com/irj/portal" target="_blank"
-                >ERC</a
-              >
-              <a href="https://webmail.ihbrr.com/owa" target="_blank">EMAIL</a>
-            </div>
-          </div>
+      <div class="navigation">
+        <div class="top-nav-items">
+          <a href="./careers.html">CAREERS</a>
+          <a href="./ihb-apps.html">IHB APPS</a>
+          <a href="https://www2.nscorp.com/WebConnect/wcLogin.jsp" target="_blank">NS MAINFRAME</a>
+          <a href="https://ihb1.maxaccel.com/SafeTrack/" target="_blank">SAFETRACK</a>
+          <a href="https://newerc.nscorp.com/irj/portal" target="_blank">ERC</a>
+          <a href="https://webmail.ihbrr.com/owa" target="_blank">EMAIL</a>
         </div>
-      </div>
-
-      <div class="hero-img-grid">
-        <div class="hero-img">
-          <img
-            class="banner-img"
-            src="./resources/images/banners/policies-hero.jpg"
-            alt=""
-          />
-        </div>
-        <div class="hero-img-content">
-          <h1>POLICIES & BENEFITS</h1>
-        </div>
-      </div>
-
-      <div class="quick-links">
-        <div class="quick-links-col">
-          <a class="quick-link" href="./employee-resources.html">EMPLOYEE RESOURCES</a>
-          <a class="quick-link" href="./questions.html">SUBMIT A QUESTION</a>
-        </div>
-        <div class="quick-links-col">
-          <a class="quick-link" href="https://newerc.nscorp.com/irj/portal" target="_blank"
-            >ERC</a
-          >
-          <a class="quick-link" href="https://ihb1.maxaccel.com/SafeTrack/" target="_blank"
-            >SAFETRACK</a
-          >
-        </div>
-      </div>
-    </div>
-    <div class="page-title-wrapper">
-      <div class="page-title">
-        <div class="page-title-title">
-          <h1 class="content-title">
-            Explore Our Employee Policies & Benefits
-          </h1>
-          <div class="title-divider"></div>
-        </div>
-        <div class="page-title-content">
-          <p class="content-desc">
-            Navigate the tabs below to access employee benefits and policies
-            information. Each tab provides essential information and guidelines
-            designed to support your well-being and enhance your experience at
-            Indiana Harbor Belt.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="policies-benefits-grid">
-      <div class="policies-image">
-        <img src="./resources/images/train4.jpg" />
-      </div>
-      <div class="policies-card">
-        <div class="policies-title">
-          <h2>IHB EMPLOYEE POLICIES</h2>
-        </div>
-        <div class="card-divider"></div>
-        <div class="policies-content">
-          <div class="policies-content-col">
-            <ul>
-              <li>
-                <a href="./resources/docs/policies/IHB Drug Policy- FRA Submission 9-4-2024.pdf" target="_blank"
-                  >IHB Drug Policy – FRA Submission 09/04/2024</a
-                >
-              </li>
-              <li>
-                <a href="./resources/docs/policies/ihb_na_dress_code.pdf" target="_blank">IHB Non-Agreement Dress Code</a>
-              </li>
-              <li><a href="./resources/docs/policies/ihb_a_dress_code.pdf" target="_blank">IHB Agreement Dress Code</a></li>
-              <li>
-                <a href="./resources/docs/policies/IHBRR Acceptable Use Policy.pdf" target="_blank">IHB Acceptable Use Policy</a>
-              </li>
-              <li><a href="./resources/docs/policies/IHBRR BYOD Policy.pdf" target="_blank">IHB BYOD Policy</a></li>
-              <li><a href="./resources/docs/policies/IHBRR Password Policy.pdf" target="_blank">IHB Password Policy</a></li>
-              <li><a href="./resources/docs/policies/IHBRR RemoteAccess Policy.pdf" target="_blank">IHB Remote Access Policy</a></li>
-              <li><a href="./resources/docs/policies/IHBRR Wireless Policy.pdf" target="_blank">IHB Wireless Policy</a></li>
-              <li><a href="./resources/docs/policies/Smoking Policy.pdf" target="_blank">Smoking Policy</a></li>
-              <li>
-                <a href="./resources/docs/policies/EEO Policy 4-2024.pdf" target="_blank">Equal Employeement Opportunites</a>
-              </li>
-            </ul>
-          </div>
-          <div class="policies-content-col">
-            <ul>
-              <li>
-                <a href="./resources/docs/policies/Requesting Time Off Policy 2024.pdf" target="_blank">Requesting Time Off Policy</a>
-              </li>
-              <li>
-                <a href="./resources/docs/policies/FMLA & Medical Leave of Absence Policy 2024.pdf" target="_blank"
-                  >FMLA & Medical Leave of Absense Policy 2024</a
-                >
-              </li>
-              <li><a href="./resources/docs/policies/RemoteWorkPolicy.pdf" target="_blank">Remote Work Policy</a></li>
-              <li>
-                <a href="./resources/docs/policies/cont_edu_policies.pdf" target="_blank">Continuing Education policies</a>
-              </li>
-              <li><a href="./resources/docs/policies/DAPA Engineering 2023.pdf" target="_blank">DAPA Engineering 2023</a></li>
-              <li><a href="./resources/docs/policies/DAPA Mechanical 2023.pdf" target="_blank">DAPA Mechanical 2023</a></li>
-              <li><a href="./resources/docs/policies/DAPA Transportation 2023.pdf" target="_blank">DAPA Transportation 2023</a></li>
-              <li>
-                <a href="./resources/docs/policies/Drug & Alcohol Policy March 2024.pdf" target="_blank">IHB Drug and Alcohol Policy</a>
-              </li>
-              <li>
-                <a href="./resources/docs/policies/Fitness for Duty Policy 6-1-20.pdf" target="_blank">Fitness for Duty Policy 06/01/20</a>
-              </li>
-              <li>
-                <a href="./resources/docs/policies/IHB Harassment, Intimidation & Discrimination Handling and Reporting Policy.pdf" target="_blank"
-                  >IHB Harassment, Intimidation & Discrimination Handling and
-                  Reporting Policy</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="benefits-wrapper">
-        <div class="benefits">
-          <div class="benefits-title">
-            <h2>IHB EMPLOYEE BENEFITS</h2>
-          </div>
-          <div class="benefits-accordion">
-            <div class="benefits-accordion-tab accordion-tab">
-              <div class="benefits-accordion-tab-button">
-                <button class="b-button accordion-button">
-                  <span class="b-tab-title">
-                    <h3>CREDIT UNION</h3>
-                  </span>
-                  <span class="b-tab-icon">
-                    <i class="closed-icon fa-solid fa-chevron-down"></i>
-                    <i class="open-icon fa-solid fa-chevron-up"></i>
-                  </span>
-                </button>
+        <div class="bottom-nav-items">
+          <div class="subnav">
+            <a class="title">EMPLOYEES</a>
+            <div class="subnav-content">
+              <div class="subnav-content-col">
+                <a href="/employee-resources.html">RESOURCES</a>
+                <a href="./ihb-apps.html">IHB APPS</a>
+                <a href="https://www2.nscorp.com/WebConnect/wcLogin.jsp" target="_blank">NS MAINFRAME</a>
+                <a href="https://ihb1.maxaccel.com/SafeTrack/" target="_blank">SAFETRACK</a>
+                <a href="https://webmail.ihbrr.com/owa" target="_blank">EMAIL</a>
               </div>
-              <div class="benefits-accordion-tab-content accordion-content">
-                <div class="benefits-content-row">
-                  <div class="benefits-content-col">
-                    <h4 class="benefits-col-header">INDIANA</h4>
-                    <p>
-                      <strong>FinAns</strong>
-                      <br />
-                      7017 - 19 Kennedy Avenue<br />
-                      Hammond, Indiana 46323<br />
-                      PHONE: <a href="tel:219-844-3125">(219) 844-3125</a><br />
-                      WEBSITE:
-                      <a href="http://www.finansfcu.org/" target="_blank"
-                        >www.finansfcu.org</a
-                      >
-                    </p>
-                  </div>
-                  <div class="benefits-content-col">
-                    <h4 class="benefits-col-header">ILLINOIS</h4>
-                    <p>
-                      <strong>ACME Continental Credit Union</strong>
-                      <br />
-                      12601 S. Perry Ave.<br />
-                      Riverdale, IL. 60827<br />
-                      PHONE: <a href="tel:708-849-3113">(219) 844-3125</a><br />
-                      WEBSITE:
-                      <a href="http://acmecontinentalcu.com/" target="_blank"
-                        >www.acmecontinentalcu.com</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="benefits-accordion-tab accordion-tab">
-              <div class="benefits-accordion-tab-button">
-                <button class="b-button accordion-button">
-                  <span class="b-tab-title">
-                    <h3>INSURANCE - DENTAL</h3>
-                  </span>
-                  <span class="b-tab-icon">
-                    <i class="closed-icon fa-solid fa-chevron-down"></i>
-                    <i class="open-icon fa-solid fa-chevron-up"></i>
-                  </span>
-                </button>
-              </div>
-              <div class="benefits-accordion-tab-content accordion-content">
-                <div class="benefits-content-row">
-                  <div class="benefits-content-col">
-                    <h4 class="benefits-col-header">AETNA US HEALTH CARE</h4>
-                    <p>
-                      <strong>ACME Continental Credit Union</strong>
-                      <br />
-                      P.O. Box 14091<br />
-                      Lexington, KY - 40512<br />
-                      WEBSITE:
-                      <a href="http://www.aetna.com/" target="_blank"
-                        >www.aetna.com</a
-                      >
-                    </p>
-                  </div>
-                  <div class="benefits-content-col">
-                    <h4 class="benefits-col-header">
-                      NATIONAL DENTAL PLAN, GP-12000
-                    </h4>
-                    <p>
-                      PHONE:
-                      <a href="tel:877-277-3368" target="_blank"
-                        >(877) 277-3368</a
-                      >
-                    </p>
-                  </div>
-                </div>
-                <div class="benefits-content-row">
-                  <a
-                    class="orange-btn benefits-link"
-                    href="./resources/docs/empinfo/A-GC-5811.pdf"
-                    >AETNA Insurance Dental Form</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="benefits-accordion-tab accordion-tab">
-              <div class="benefits-accordion-tab-button">
-                <button class="b-button accordion-button">
-                  <span class="b-tab-title">
-                    <h3>INSURANCE - HEALTH & WELFARE</h3>
-                  </span>
-                  <span class="b-tab-icon">
-                    <i class="closed-icon fa-solid fa-chevron-down"></i>
-                    <i class="open-icon fa-solid fa-chevron-up"></i>
-                  </span>
-                </button>
-              </div>
-              <div class="benefits-accordion-tab-content accordion-content">
-                <div class="benefits-content-row">
-                  <div class="benefits-content-col">
-                    <h4 class="benefits-col-header">UNITED HEALTHCARE</h4>
-                    <p>
-                      <strong>GA-23000, GA-23111, & GA-46000</strong>
-                      <br />
-                      PHONE: <a href="tel:1-800-842-9905">1 (800) 842-9905</a
-                      ><br />
-                      WEBSITE:
-                      <a href="http://myuhc.com/" target="_blank"
-                        >www.myuhc.com</a
-                      ><br />
-                    </p>
-                  </div>
-                  <div class="benefits-content-col">
-                    <p>
-                      <strong>CLAIMS: </strong>P.O. Box 30985, Salt Lake City,
-                      UT 84130-0985<br />
-                      <strong>LIFE INSURANCE: </strong>P.O. Box 30985, Salt Lake
-                      City, UT 84130-0985<br />
-                      <strong>OCCUPATIONAL INJURY: </strong>P.O. Box 1929,
-                      Matteson, IL 60443
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="benefits-accordion-tab accordion-tab">
-              <div class="benefits-accordion-tab-button">
-                <button class="b-button accordion-button">
-                  <span class="b-tab-title">
-                    <h3>INSURANCE - VISION PLAN</h3>
-                  </span>
-                  <span class="b-tab-icon">
-                    <i class="closed-icon fa-solid fa-chevron-down"></i>
-                    <i class="open-icon fa-solid fa-chevron-up"></i>
-                  </span>
-                </button>
-              </div>
-              <div class="benefits-accordion-tab-content accordion-content">
-                <div class="benefits-content-row">
-                  <div class="benefits-content-col">
-                    <h4 class="benefits-col-header">EYEMED</h4>
-                    <p>
-                      PHONE: <a href="tel:855-212-6003">(855) 212-6003</a><br />
-                      WEBSITE:
-                      <a href="https://eyemed.com/en-us" target="_blank"
-                        >www.eyemed.com</a
-                      ><br />
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="benefits-accordion-tab accordion-tab">
-              <div class="benefits-accordion-tab-button">
-                <button class="b-button accordion-button">
-                  <span class="b-tab-title">
-                    <h3>INSURANCE - SUPPLEMENTAL</h3>
-                  </span>
-                  <span class="b-tab-icon">
-                    <i class="closed-icon fa-solid fa-chevron-down"></i>
-                    <i class="open-icon fa-solid fa-chevron-up"></i>
-                  </span>
-                </button>
-              </div>
-              <div class="benefits-accordion-tab-content accordion-content">
-                <div class="benefits-content-row">
-                  <div class="benefits-content-col">
-                    <h4 class="benefits-col-header">SUPPLEMENTAL INSURANCE</h4>
-                    <p>
-                      <strong>BMWE, GP-7000</strong> - The Hartford<br />
-                      <strong>Shopcrafts, GPR-5000</strong> - The Hartford<br />
-                      <strong>Signalmen, GPR-5000</strong> - The Hartford<br />
-                      <strong>Yardmasters, GP-9000</strong> - Trustmark<br />
-                      <strong>ARASA</strong> - Trustmark<br />
-                    </p>
-                  </div>
-                </div>
-                <div class="benefits-content-row">
-                  <div class="benefits-content-col">
-                    <h4 class="benefits-col-header">
-                      FILING A CLAIM WITH THE HARTFORD
-                    </h4>
-                    <ul>
-                      <li>
-                        Claims must be filed with The Hartford within 20 days of
-                        the start of the disability. (Contact The Hartford to
-                        confirm filing deadlines). Failure to file a claim
-                        within the deadlines established by The Hartford will
-                        result in the denial of your claim.
-                      </li>
-                      <li>
-                        The Hartford is a supplement to the RRB and will not pay
-                        any claims until the employee has filed for benefits
-                        with the RRB. Claims for RRB and supplemental insurance
-                        should be filed at the same time.
-                      </li>
-                      <li>
-                        Employees may file a claim by calling The Hartford at
-                        <a href="tel:1-800-205-7651">1 (800) 205-7651</a> or by
-                        visiting their website at
-                        <a
-                          href="https://abilityadvantage.thehartford.com/"
-                          target="_blank"
-                          >www.abilityadvantage.thehartford.com</a
-                        >.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="benefits-content-row">
-                  <div class="benefits-content-col">
-                    <h4 class="benefits-col-header">
-                      FILING A CLAIM WITH TRUSTMARK
-                    </h4>
-                    <ul>
-                      <li>
-                        Claims must be filed with Trustmark within 90 days of
-                        the start of the disability. (Contact Trustmark to
-                        confirm filing deadlines). Failure to file a claim
-                        within the deadlines established by Trustmark will
-                        result in the denial of your claim.
-                      </li>
-                      <li>
-                        Trustmark is a supplement to the RRB and will not pay
-                        any claims until the employee has filed for benefits
-                        with the RRB. Claims for RRB and supplemental insurance
-                        should be filed at the same time.
-                      </li>
-                      <li>
-                        Employees may file a claim by calling Trustmark at
-                        <a href="tel:1-800-504-9052"></a>1 (800) 504-9052.
-                      </li>
-                      <li>
-                        <p>
-                          <strong>MAILING ADDRESS: </strong><br />
-                          P.O. Box 7901 <br />
-                          Lake Forest, IL. 60045 <br />
-                          Fax: 1-847-615-3866
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="benefits-accordion-tab accordion-tab">
-              <div class="benefits-accordion-tab-button">
-                <button class="b-button accordion-button">
-                  <span class="b-tab-title">
-                    <h3>EAP - EMPLOYEE ASSISTANCE PROGRAM</h3>
-                  </span>
-                  <span class="b-tab-icon">
-                    <i class="closed-icon fa-solid fa-chevron-down"></i>
-                    <i class="open-icon fa-solid fa-chevron-up"></i>
-                  </span>
-                </button>
-              </div>
-              <div class="benefits-accordion-tab-content accordion-content">
-                <div class="benefits-content-row">
-                  <div class="benefits-content-col">
-                    <h4 class="benefits-col-header">TOTAL CARE EAP</h4>
-                    <p>
-                      <strong>GA-23000, GA-23111, & GA-46000</strong>
-                      <br />
-                      PHONE:
-                      <a href="tel:1-800-252-4555">1 (800) 252-4555</a> OR
-                      <a href="tel:1-800-225-2527">1 (800) 225-2527</a><br />
-                      WEBSITE:
-                      <a href="http://www.theeap.com/" target="_blank"
-                        >www.theEAP.com</a
-                      >
-                    </p>
-                  </div>
-                </div>
-                <div class="benefits-content-row">
-                  <div class="benefits-content-col">
-                    <h4 class="benefits-col-header">ADDITIONAL LINKS:</h4>
-                    <p>
-                      <a
-                        href="./resources/docs/empinfo/3930_001.pdf"
-                        target="_blank"
-                        >Self-Help Resources</a
-                      ><br /><br />
-                      <a
-                        href="https://www.theeap.com/video-library/totalcare-employee-orientation"
-                        target="_blank"
-                        >Orientation Video</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="benefits-accordion-tab accordion-tab">
-              <div class="benefits-accordion-tab-button">
-                <button class="b-button accordion-button">
-                  <span class="b-tab-title">
-                    <h3>U.S. RAILROAD RETIREMENT BOARD</h3>
-                  </span>
-                  <span class="b-tab-icon">
-                    <i class="closed-icon fa-solid fa-chevron-down"></i>
-                    <i class="open-icon fa-solid fa-chevron-up"></i>
-                  </span>
-                </button>
-              </div>
-              <div class="benefits-accordion-tab-content accordion-content">
-                <div class="benefits-content-row">
-                  <div class="benefits-content-col">
-                    <h4 class="benefits-col-header">
-                      U.S. RAILROAD RETIREMENT BOARD
-                    </h4>
-                    <p>
-                      63 W. Jefferson St., Suite 102<br />
-                      Joliet, IL 60432-4337<br />
-                      PHONE: <a href="tel:877-772-5772">(877) 772-4337</a><br />
-                      WEBSITE:
-                      <a href="http://www.rrb.gov/" target="_blank"
-                        >www.rrb.gov</a
-                      >
-                    </p>
-                  </div>
-                </div>
-                <div class="benefits-content-row">
-                  <div class="benefits-content-col">
-                    <h4 class="benefits-col-header">
-                      U.S. RAILROAD RETIREMENT BOARD
-                    </h4>
-                    <p>
-                      844 North Rush St.<br />
-                      Chicago, IL 60611
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="benefits-accordion-tab accordion-tab">
-              <div class="benefits-accordion-tab-button">
-                <button class="b-button accordion-button">
-                  <span class="b-tab-title">
-                    <h3>VANGUARD (401K)</h3>
-                  </span>
-                  <span class="b-tab-icon">
-                    <i class="closed-icon fa-solid fa-chevron-down"></i>
-                    <i class="open-icon fa-solid fa-chevron-up"></i>
-                  </span>
-                </button>
-              </div>
-              <div class="benefits-accordion-tab-content accordion-content">
-                <div class="benefits-content-row">
-                  <div class="benefits-content-col">
-                    <h4 class="benefits-col-header">VANGUARD</h4>
-                    <p>
-                      PHONE: <a href="tel:1-800-523-1188">1 (800) 523-1188</a
-                      ><br />
-                      WEBSITE:
-                      <a
-                        href="https://personal.vanguard.com/us/hnwnesc/nesc/LoginPage"
-                        target="_blank"
-                        >www.personal.vanguard.com</a
-                      >
-                    </p>
-                  </div>
-                  <div class="benefits-content-col">
-                    <p>
-                      <a
-                        href="./resources/docs/empinfo/Financial Wellness Announcement Flyer.pdf"
-                        target="_blank"
-                        >FINANCIAL WELLNESS FLYER</a
-                      ><br /><br />
-                      <a
-                        href="./resources/docs/empinfo/0709_001.pdf"
-                        target="_blank"
-                        >SUMMARY OF MATERIAL MODIFICATIONS - 401K</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="benefits-accordion-tab accordion-tab">
-              <div class="benefits-accordion-tab-button">
-                <button class="b-button accordion-button">
-                  <span class="b-tab-title">
-                    <h3>AFLAC INSURANCE</h3>
-                  </span>
-                  <span class="b-tab-icon">
-                    <i class="closed-icon fa-solid fa-chevron-down"></i>
-                    <i class="open-icon fa-solid fa-chevron-up"></i>
-                  </span>
-                </button>
-              </div>
-              <div class="benefits-accordion-tab-content accordion-content">
-                <div class="benefits-content-row">
-                  <div class="benefits-content-col">
-                    <h4 class="benefits-col-header">AFLAC</h4>
-                    <p>
-                      For more information contact:<br />
-                      DAVID CICHON<br />
-                      EMAIL:
-                      <a href="mailto:david_cichon@us.aflac.com"
-                        >david_cichon@us.aflac.com</a
-                      ><br />
-                      WEBSITE:
-                      <a href="http://www.aflac.com/" target="_blank"
-                        >www.aflac.com</a
-                      ><br />
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="benefits-accordion-tab accordion-tab">
-              <div class="benefits-accordion-tab-button">
-                <button class="b-button accordion-button">
-                  <span class="b-tab-title">
-                    <h3>METLIFE INSURANCE & BENEFITS</h3>
-                  </span>
-                  <span class="b-tab-icon">
-                    <i class="closed-icon fa-solid fa-chevron-down"></i>
-                    <i class="open-icon fa-solid fa-chevron-up"></i>
-                  </span>
-                </button>
-              </div>
-              <div class="benefits-accordion-tab-content accordion-content">
-                <div class="benefits-content-row">
-                  <div class="benefits-content-col">
-                    <h4 class="benefits-col-header">METLIFE</h4>
-                    <p>
-                      PHONE:
-                      <a href="tel:1-800-638-5433">1-800-METLIFE</a><br />
-                      WEBSITE:
-                      <a href="https://www.metlife.com/" target="_blank"
-                        >www.metlife.com</a
-                      ><br />
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="benefits-accordion-tab accordion-tab">
-              <div class="benefits-accordion-tab-button">
-                <button class="b-button accordion-button">
-                  <span class="b-tab-title">
-                    <h3>ADDITIONAL LINKS</h3>
-                  </span>
-                  <span class="b-tab-icon">
-                    <i class="closed-icon fa-solid fa-chevron-down"></i>
-                    <i class="open-icon fa-solid fa-chevron-up"></i>
-                  </span>
-                </button>
-              </div>
-              <div class="benefits-accordion-tab-content accordion-content">
-                <div class="benefits-content-row">
-                  <div class="benefits-content-col">
-                    <p>
-                      <a
-                        href="https://us.hoyasafety.com/login.asp?USER=ihbrr_adm&PWD=f4264b096c85df501fd2d7f9c205b3b6"
-                        target="_blank"
-                        >IHB PRESCRIPTION SAFETY GLASSES PROGRAM</a
-                      ><br /><br />
-                      <a
-                        href="./resources/docs/empinfo/GM-Supplier-Discount.pdf"
-                        target="_blank"
-                        >GM SUPPLIER DISCOUNTS</a
-                      ><br /><br />
-                      <a
-                        href="./resources/docs/empinfo/Ford Motor Company X-Plan.pdf"
-                        target="_blank"
-                        >FORD SUPPLIER DISCOUNTS</a
-                      ><br /><br />
-                      <a
-                        href="./resources/docs/empinfo/cont_edu_reimbursement.pdf"
-                        target="_blank"
-                        >CONTINUING EDUCATION REIMBURSEMENT FORM</a
-                      ><br /><br />
-                      <a
-                        href="./resources/docs/empinfo/cont_edu_request.pdf"
-                        target="_blank"
-                        >CONTINUING EDUCATION REQUEST FORM</a
-                      ><br /><br />
-                      <a
-                        href="./resources/docs/empinfo/THCDrugTesting.pdf"
-                        target="_blank"
-                        >WHAT YOU SHOULD KNOW ABOUT CBD OIL, THC, AND DOT DRUG
-                        TESTING</a
-                      ><br /><br />
-                      <a
-                        href="./resources/docs/empinfo/ERISA notice.pdf"
-                        target="_blank"
-                        >ERISA ANNUAL REPORTS AND SUMMARY ANNUAL REPORTS</a
-                      ><br /><br />
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <footer>
-      <div class="footer-wrapper-desktop">
-        <div class="footer-desktop">
-          <div class="footer-col">
-            <div class="footer-logo">
-              <img src="./resources/images/ihb-logo.png" alt="Resources" />
-            </div>
-          </div>
-          <div class="footer-col">
-            <h3>Employees</h3>
-            <a href="./employee-resources.html">Employee Resources</a>
-            <a href="./ihb-apps.html">IHB Apps</a>
-            <a
-              href="https://www2.nscorp.com/WebConnect/wcLogin.jsp"
-              target="_blank"
-              >NS Mainframe</a
-            >
-            <a href="https://ihb1.maxaccel.com/SafeTrack/" target="_blank"
-              >SafeTrack</a
-            >
-            <a href="https://webmail.ihbrr.com/owa" target="_blank">Email</a>
-            <a href="/employee-info.html">INFO</a>
-            <a href="./policies-benefits.html">Policies & Benefits</a>
-            <a href="https://newerc.nscorp.com/irj/portal" target="_blank">ERC</a>
-            <a href="https://www.theeap.com/" target="_blank">EAP</a>
-          </div>
-
-          <div class="footer-col">
-            <h3>Services</h3>
-            <a href="./services.html">Services</a>
-            <a href="./safety-hotline.html">Safety Hotline</a>
-            <a href="./bulletins.html">Bulletins</a>
-            <a href="./tariffs.html">Tariffs</a>
-            <a href="./maps.html">Maps</a>
-          </div>
-
-          <div class="footer-col">
-            <h3>Our Business</h3>
-            <a href="./about-us.html">About Us</a>
-            <a href="./business-development.html">Business Development</a>
-          </div>
-          <div class="footer-col">
-            <h3>Local Industries</h3>
-            <a href="http://www.csx.com/" target="_blank">CSX</a>
-            <a href="http://www.nscorp.com/" target="_blank">Norfolk Southern</a>
-            <a href="http://www.ihbrr.com/lib/links/bnsflinks/bnsflinks.htm"
-              >BNSF Links</a
-            >
-            <a href="http://www.ihbrr.com/lib/links/uplinks/uplinks.htm"
-              >UP Links</a
-            >
-          </div>
-
-          <div class="footer-col">
-            <h3>Contact</h3>
-            <a href="./contact-us.html">Contact Us</a>
-            <a href="./questions.html">Submit a Question</a>
-            <p>Customer Service & Car Tracing: <a href="tel:708-201-3460">(708) 201-3460</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="footer-wrapper-mobile">
-        <div class="footer-mobile">
-          <div class="footer-logo">
-            <a href="/"
-              ><img src="./resources/images/ihb-logo.png" alt="IHB Logo"
-            /></a>
-          </div>
-          <div class="footer-accordion">
-            <div class="fa-tab accordion-tab">
-              <div class="fa-tab-main">
-                <div class="fa-tab-button">
-                  <button class="fa-button accordion-button">
-                    <span class="fa-button-title">EMPLOYEES</span>
-                    <span class="fa-button-icon"
-                      ><i class="closed-icon fa-solid fa-chevron-down"></i>
-                      <i class="open-icon fa-solid fa-chevron-up"></i
-                    ></span>
-                  </button>
-                </div>
-              </div>
-              <div class="fa-submenu accordion-content">
-                <a href="./employee-resources.html">Employee Resources</a>
-                <a href="./ihb-apps.html">IHB Apps</a>
-                <a
-                  href="https://www2.nscorp.com/WebConnect/wcLogin.jsp"
-                  target="_blank"
-                  >NS Mainframe</a
-                >
-                <a href="https://ihb1.maxaccel.com/SafeTrack/" target="_blank"
-                  >SafeTrack</a
-                >
-                <a href="https://webmail.ihbrr.com/owa" target="_blank">Email</a>
+              <div class="subnav-content-col">
                 <a href="/employee-info.html">INFO</a>
-
-                <a href="./policies-benefits.html">Policies & Benefits</a>
-
+                <a href="./policies-benefits.html">POLICIES & BENEFITS</a>
                 <a href="https://newerc.nscorp.com/irj/portal" target="_blank">ERC</a>
-
                 <a href="https://www.theeap.com/" target="_blank">EAP</a>
               </div>
             </div>
-            <div class="fa-tab accordion-tab">
-              <div class="fa-tab-main">
-                <div class="fa-tab-button">
-                  <button class="fa-button accordion-button">
-                    <span class="fa-button-title">SERVICES</span>
-                    <span class="fa-button-icon"
-                      ><i class="closed-icon fa-solid fa-chevron-down"></i>
-                      <i class="open-icon fa-solid fa-chevron-up"></i
-                    ></span>
-                  </button>
-                </div>
+          </div>
+          <div class="subnav">
+            <a class="title" href="./services.html">SERVICES</a>
+            <div class="subnav-content">
+              <div class="subnav-content-col">
+                <a href="./safety-hotline.html">SAFETY HOTLINE</a>
+                <a href="./bulletins.html">BULLETINS</a>
+                <a href="./tariffs.html">TARIFFS</a>
               </div>
-              <div class="fa-submenu accordion-content">
-                <a href="./services.html">Services</a>
-                <a href="./safety-hotline.html">Safety Hotline</a>
-                <a href="./bulletins.html">Bulletins</a>
-                <a href="./tariffs.html">Tariffs</a>
-                <a href="./maps.html">Maps</a>
+              <div class="subnav-content-col">
+                <a href="./business-development.html">BUSINESS DEVELOPMENT</a>
+                <a href="./services.html">SERVICES</a>
+                <a href="./maps.html">MAPS</a>
               </div>
             </div>
-            <div class="fa-tab accordion-tab">
-              <div class="fa-tab-main">
-                <div class="fa-tab-button">
-                  <button class="fa-button accordion-button">
-                    <span class="fa-button-title">OUR BUSINESS</span>
-                    <span class="fa-button-icon">
-                      <i class="closed-icon fa-solid fa-chevron-down"></i>
-                      <i class="open-icon fa-solid fa-chevron-up"></i
-                    ></span>
-                  </button>
-                </div>
-              </div>
-              <div class="fa-submenu accordion-content">
-                <a href="./about-us.html">About Us</a>
-                <a href="./business-development.html">Business Development</a>
+          </div>
+          <div class="subnav">
+            <a class="title" href="/about-us.html">ABOUT US</a>
+          </div>
+          <div class="subnav">
+            <a class="title">CONTACT</a>
+            <div class="subnav-content">
+              <div class="subnav-content-col">
+                <a href="./contact-us.html">CONTACT US</a>
+                <a href="./questions.html">SUBMIT A QUESTION</a>
               </div>
             </div>
-            <div class="fa-tab accordion-tab">
-              <div class="fa-tab-main">
-                <div class="fa-tab-button">
-                  <button class="fa-button accordion-button">
-                    <span class="fa-button-title">LOCAL INDUSTRIES</span>
-                    <span class="fa-button-icon">
-                      <i class="closed-icon fa-solid fa-chevron-down"></i>
-                      <i class="open-icon fa-solid fa-chevron-up"></i>
-                    </span>
-                  </button>
-                </div>
-              </div>
-              <div class="fa-submenu accordion-content">
-                <ul class="fa-submenu-items">
-                  <li><a href="http://www.csx.com/" target="_blank">CSX</a></li>
-                  <li><a href="http://www.nscorp.com/" target="_blank">Norfolk Southern</a></li>
-                  <li>
-                    <a
-                      href="http://www.ihbrr.com/lib/links/bnsflinks/bnsflinks.htm"
-                      >BNSF Links</a
-                    >
-                  </li>
-                  <li>
-                    <a href="http://www.ihbrr.com/lib/links/uplinks/uplinks.htm"
-                      >UP Links</a
-                    >
-                  </li>
-                </ul>
+          </div>
+        </div>
+        <div id="hamburger-btn" class="hamburger-menu">
+          <input type="checkbox" id="checkbox" class="checkbox3 visuallyHidden" />
+          <label for="checkbox">
+            <div class="hamburger hamburger3">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+              <span class="bar bar3"></span>
+              <span class="bar bar4"></span>
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-nav-menu-wrapper">
+      <div class="mobile-nav-menu">
+        <div class="nav-menu-accordion">
+          <div class="nav-menu-accordion-tab accordion-tab">
+            <div class="nav-menu-accordion-tab-button">
+              <div class="nav-menu-button accordion-button">
+                <span class="nav-menu-tab-title">
+                  <h2>EMPLOYEES</h2>
+                </span>
+                <span class="nav-menu-tab-icon">
+                  <i class="closed-icon fa-solid fa-chevron-down"></i>
+                  <i class="open-icon fa-solid fa-chevron-up"></i>
+                </span>
               </div>
             </div>
-            <div class="fa-tab accordion-tab">
-              <div class="fa-tab-main">
-                <div class="fa-tab-button">
-                  <button class="fa-button accordion-button">
-                    <span class="fa-button-title">CONTACT</span>
-                    <span class="fa-button-icon">
-                      <i class="closed-icon fa-solid fa-chevron-down"></i>
-                      <i class="open-icon fa-solid fa-chevron-up"></i>
-                    </span>
-                  </button>
-                </div>
+            <div class="nav-menu-accordion-tab-content accordion-content">
+              <a class="menu-item" href="./employee-resources.html">RESOURCES</a>
+
+              <a class="menu-item" href="./ihb-apps.html">IHB APPS</a>
+
+              <a class="menu-item" href="https://www2.nscorp.com/WebConnect/wcLogin.jsp" target="_blank">NS
+                MAINFRAME</a>
+
+              <a class="menu-item" href="https://ihb1.maxaccel.com/SafeTrack/" target="_blank">SAFETRACK</a>
+
+              <a class="menu-item" href="https://webmail.ihbrr.com/owa" target="_blank">EMAIL</a>
+
+              <a class="menu-item" href="./employee-info.html">INFO</a>
+
+              <a class="menu-item" href="./policies-benefits.html">POLICIES & BENEFITS</a>
+
+              <a class="menu-item" href="https://newerc.nscorp.com/irj/portal" target="_blank">ERC</a>
+
+              <a class="menu-item" href="https://www.theeap.com/" target="_blank">EAP</a>
+            </div>
+          </div>
+          <div class="nav-menu-accordion-tab accordion-tab">
+            <div class="nav-menu-accordion-tab-button">
+              <div class="nav-menu-button accordion-button">
+                <span class="nav-menu-tab-title">
+                  <h2>SERVICES</h2>
+                </span>
+                <span class="nav-menu-tab-icon">
+                  <i class="closed-icon fa-solid fa-chevron-down"></i>
+                  <i class="open-icon fa-solid fa-chevron-up"></i>
+                </span>
               </div>
-              <div class="fa-submenu accordion-content">
-                <a href="./contact-us.html">Contact Us</a>
-                  <a href="./questions.html">Submit a Question</a>
+            </div>
+            <div class="nav-menu-accordion-tab-content accordion-content">
+              <a class="menu-item" href="./safety-hotline.html">SAFETY HOTLINE</a>
+              <a class="menu-item" href="./bulletins.html">BULLETINS</a>
+              <a class="menu-item" href="./tariffs.html">TARIFFS</a>
+              <a class="menu-item" href="./business-development.html">BUSINESS DEVELOPMENT</a>
+              <a class="menu-item" href="./services.html">SERVICES</a>
+              <a class="menu-item" href="./maps.html">MAPS</a>
+            </div>
+          </div>
+          <div class="nav-menu-accordion-tab accordion-tab">
+            <div class="nav-menu-accordion-tab-button">
+              <div class="nav-menu-button accordion-button">
+                <a class="nav-menu-tab-title" href="./about-us.html">
+                  <h2>ABOUT US</h2>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="nav-menu-accordion-tab accordion-tab">
+            <div class="nav-menu-accordion-tab-button">
+              <div class="nav-menu-button accordion-button">
+                <span class="nav-menu-tab-title">
+                  <h2>CONTACT</h2>
+                </span>
+                <span class="nav-menu-tab-icon">
+                  <i class="closed-icon fa-solid fa-chevron-down"></i>
+                  <i class="open-icon fa-solid fa-chevron-up"></i>
+                </span>
+              </div>
+            </div>
+            <div class="nav-menu-accordion-tab-content accordion-content">
+              <a class="menu-item" href="./contact-us.html">CONTACT US</a>
+
+              <a class="menu-item" href="./questions.html">SUBMIT A QUESTION</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-menu-links">
+          <div class="nav-menu-links-col">
+            <a href="./careers">CAREERS</a>
+            <a href="./ihb-apps.html">IHB APPS</a>
+            <a href="https://www2.nscorp.com/WebConnect/wcLogin.jsp" target="_blank">NS MAINFRAME</a>
+          </div>
+          <div class="nav-menu-links-col">
+            <a href="https://ihb1.maxaccel.com/SafeTrack/" target="_blank">SAFETRACK</a>
+            <a href="https://newerc.nscorp.com/irj/portal" target="_blank">ERC</a>
+            <a href="https://webmail.ihbrr.com/owa" target="_blank">EMAIL</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-img-grid">
+      <div class="hero-img">
+        <img class="banner-img" src="./resources/images/banners/policies-hero.jpg" alt="Policies & Benefits Hero Banner" />
+      </div>
+      <div class="hero-img-content">
+        <h1>POLICIES & BENEFITS</h1>
+      </div>
+    </div>
+
+    <div class="quick-links">
+      <div class="quick-links-col">
+        <a class="quick-link" href="./employee-resources.html">EMPLOYEE RESOURCES</a>
+        <a class="quick-link" href="./questions.html">SUBMIT A QUESTION</a>
+      </div>
+      <div class="quick-links-col">
+        <a class="quick-link" href="https://newerc.nscorp.com/irj/portal" target="_blank">ERC</a>
+        <a class="quick-link" href="https://ihb1.maxaccel.com/SafeTrack/" target="_blank">SAFETRACK</a>
+      </div>
+    </div>
+  </div>
+  <div class="page-title-wrapper">
+    <div class="page-title">
+      <div class="page-title-title">
+        <h1 class="content-title">
+          Explore Our Employee Policies & Benefits
+        </h1>
+        <div class="title-divider"></div>
+      </div>
+      <div class="page-title-content">
+        <p class="content-desc">
+          Navigate the tabs below to access employee benefits and policies
+          information. Each tab provides essential information and guidelines
+          designed to support your well-being and enhance your experience at
+          Indiana Harbor Belt.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="policies-benefits-grid">
+    <div class="policies-image">
+      <img src="./resources/images/train4.jpg" alt="IHB Train" />
+    </div>
+    <div class="policies-card">
+      <div class="policies-title">
+        <h2>IHB EMPLOYEE POLICIES</h2>
+      </div>
+      <div class="card-divider"></div>
+      <div class="policies-content">
+        <div class="policies-content-col">
+          <ul>
+            <li>
+              <a href="./resources/docs/policies/IHB Drug Policy- FRA Submission 9-4-2024.pdf" target="_blank">IHB Drug
+                Policy – FRA Submission 09/04/2024</a>
+            </li>
+            <li>
+              <a href="./resources/docs/policies/ihb_na_dress_code.pdf" target="_blank">IHB Non-Agreement Dress Code</a>
+            </li>
+            <li><a href="./resources/docs/policies/ihb_a_dress_code.pdf" target="_blank">IHB Agreement Dress Code</a>
+            </li>
+            <li>
+              <a href="./resources/docs/policies/IHBRR Acceptable Use Policy.pdf" target="_blank">IHB Acceptable Use
+                Policy</a>
+            </li>
+            <li><a href="./resources/docs/policies/IHBRR BYOD Policy.pdf" target="_blank">IHB BYOD Policy</a></li>
+            <li><a href="./resources/docs/policies/IHBRR Password Policy.pdf" target="_blank">IHB Password Policy</a>
+            </li>
+            <li><a href="./resources/docs/policies/IHBRR RemoteAccess Policy.pdf" target="_blank">IHB Remote Access
+                Policy</a></li>
+            <li><a href="./resources/docs/policies/IHBRR Wireless Policy.pdf" target="_blank">IHB Wireless Policy</a>
+            </li>
+            <li><a href="./resources/docs/policies/Smoking Policy.pdf" target="_blank">Smoking Policy</a></li>
+            <li>
+              <a href="./resources/docs/policies/EEO Policy 4-2024.pdf" target="_blank">Equal Employeement
+                Opportunites</a>
+            </li>
+          </ul>
+        </div>
+        <div class="policies-content-col">
+          <ul>
+            <li>
+              <a href="./resources/docs/policies/Requesting Time Off Policy 2024.pdf" target="_blank">Requesting Time
+                Off Policy</a>
+            </li>
+            <li>
+              <a href="./resources/docs/policies/FMLA & Medical Leave of Absence Policy 2024.pdf" target="_blank">FMLA &
+                Medical Leave of Absense Policy 2024</a>
+            </li>
+            <li><a href="./resources/docs/policies/RemoteWorkPolicy.pdf" target="_blank">Remote Work Policy</a></li>
+            <li>
+              <a href="./resources/docs/policies/cont_edu_policies.pdf" target="_blank">Continuing Education
+                policies</a>
+            </li>
+            <li><a href="./resources/docs/policies/DAPA Engineering 2023.pdf" target="_blank">DAPA Engineering 2023</a>
+            </li>
+            <li><a href="./resources/docs/policies/DAPA Mechanical 2023.pdf" target="_blank">DAPA Mechanical 2023</a>
+            </li>
+            <li><a href="./resources/docs/policies/DAPA Transportation 2023.pdf" target="_blank">DAPA Transportation
+                2023</a></li>
+            <li>
+              <a href="./resources/docs/policies/Drug & Alcohol Policy March 2024.pdf" target="_blank">IHB Drug and
+                Alcohol Policy</a>
+            </li>
+            <li>
+              <a href="./resources/docs/policies/Fitness for Duty Policy 6-1-20.pdf" target="_blank">Fitness for Duty
+                Policy 06/01/20</a>
+            </li>
+            <li>
+              <a href="./resources/docs/policies/IHB Harassment, Intimidation & Discrimination Handling and Reporting Policy.pdf"
+                target="_blank">IHB Harassment, Intimidation & Discrimination Handling and
+                Reporting Policy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="benefits-wrapper">
+      <div class="benefits">
+        <div class="benefits-title">
+          <h2>IHB EMPLOYEE BENEFITS</h2>
+        </div>
+        <div class="benefits-accordion">
+          <div class="benefits-accordion-tab accordion-tab">
+            <div class="benefits-accordion-tab-button">
+              <button class="b-button accordion-button">
+                <span class="b-tab-title">
+                  <h3>CREDIT UNION</h3>
+                </span>
+                <span class="b-tab-icon">
+                  <i class="closed-icon fa-solid fa-chevron-down"></i>
+                  <i class="open-icon fa-solid fa-chevron-up"></i>
+                </span>
+              </button>
+            </div>
+            <div class="benefits-accordion-tab-content accordion-content">
+              <div class="benefits-content-row">
+                <div class="benefits-content-col">
+                  <h4 class="benefits-col-header">INDIANA</h4>
                   <p>
-                    Customer Service & Car Tracing:
-                    <a href="tel:708-201-3460">(708) 201-3460</a>
+                    <strong>FinAns</strong>
+                    <br />
+                    7017 - 19 Kennedy Avenue<br />
+                    Hammond, Indiana 46323<br />
+                    PHONE: <a href="tel:219-844-3125">(219) 844-3125</a><br />
+                    WEBSITE:
+                    <a href="http://www.finansfcu.org/" target="_blank">www.finansfcu.org</a>
                   </p>
+                </div>
+                <div class="benefits-content-col">
+                  <h4 class="benefits-col-header">ILLINOIS</h4>
+                  <p>
+                    <strong>ACME Continental Credit Union</strong>
+                    <br />
+                    12601 S. Perry Ave.<br />
+                    Riverdale, IL. 60827<br />
+                    PHONE: <a href="tel:708-849-3113">(219) 844-3125</a><br />
+                    WEBSITE:
+                    <a href="http://acmecontinentalcu.com/" target="_blank">www.acmecontinentalcu.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="benefits-accordion-tab accordion-tab">
+            <div class="benefits-accordion-tab-button">
+              <button class="b-button accordion-button">
+                <span class="b-tab-title">
+                  <h3>INSURANCE - DENTAL</h3>
+                </span>
+                <span class="b-tab-icon">
+                  <i class="closed-icon fa-solid fa-chevron-down"></i>
+                  <i class="open-icon fa-solid fa-chevron-up"></i>
+                </span>
+              </button>
+            </div>
+            <div class="benefits-accordion-tab-content accordion-content">
+              <div class="benefits-content-row">
+                <div class="benefits-content-col">
+                  <h4 class="benefits-col-header">AETNA US HEALTH CARE</h4>
+                  <p>
+                    <strong>ACME Continental Credit Union</strong>
+                    <br />
+                    P.O. Box 14091<br />
+                    Lexington, KY - 40512<br />
+                    WEBSITE:
+                    <a href="http://www.aetna.com/" target="_blank">www.aetna.com</a>
+                  </p>
+                </div>
+                <div class="benefits-content-col">
+                  <h4 class="benefits-col-header">
+                    NATIONAL DENTAL PLAN, GP-12000
+                  </h4>
+                  <p>
+                    PHONE:
+                    <a href="tel:877-277-3368" target="_blank">(877) 277-3368</a>
+                  </p>
+                </div>
+              </div>
+              <div class="benefits-content-row">
+                <a class="orange-btn benefits-link" href="./resources/docs/empinfo/A-GC-5811.pdf">AETNA Insurance Dental
+                  Form</a>
+              </div>
+            </div>
+          </div>
+          <div class="benefits-accordion-tab accordion-tab">
+            <div class="benefits-accordion-tab-button">
+              <button class="b-button accordion-button">
+                <span class="b-tab-title">
+                  <h3>INSURANCE - HEALTH & WELFARE</h3>
+                </span>
+                <span class="b-tab-icon">
+                  <i class="closed-icon fa-solid fa-chevron-down"></i>
+                  <i class="open-icon fa-solid fa-chevron-up"></i>
+                </span>
+              </button>
+            </div>
+            <div class="benefits-accordion-tab-content accordion-content">
+              <div class="benefits-content-row">
+                <div class="benefits-content-col">
+                  <h4 class="benefits-col-header">UNITED HEALTHCARE</h4>
+                  <p>
+                    <strong>GA-23000, GA-23111, & GA-46000</strong>
+                    <br />
+                    PHONE: <a href="tel:1-800-842-9905">1 (800) 842-9905</a><br />
+                    WEBSITE:
+                    <a href="http://myuhc.com/" target="_blank">www.myuhc.com</a><br />
+                  </p>
+                </div>
+                <div class="benefits-content-col">
+                  <p>
+                    <strong>CLAIMS: </strong>P.O. Box 30985, Salt Lake City,
+                    UT 84130-0985<br />
+                    <strong>LIFE INSURANCE: </strong>P.O. Box 30985, Salt Lake
+                    City, UT 84130-0985<br />
+                    <strong>OCCUPATIONAL INJURY: </strong>P.O. Box 1929,
+                    Matteson, IL 60443
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="benefits-accordion-tab accordion-tab">
+            <div class="benefits-accordion-tab-button">
+              <button class="b-button accordion-button">
+                <span class="b-tab-title">
+                  <h3>INSURANCE - VISION PLAN</h3>
+                </span>
+                <span class="b-tab-icon">
+                  <i class="closed-icon fa-solid fa-chevron-down"></i>
+                  <i class="open-icon fa-solid fa-chevron-up"></i>
+                </span>
+              </button>
+            </div>
+            <div class="benefits-accordion-tab-content accordion-content">
+              <div class="benefits-content-row">
+                <div class="benefits-content-col">
+                  <h4 class="benefits-col-header">EYEMED</h4>
+                  <p>
+                    PHONE: <a href="tel:855-212-6003">(855) 212-6003</a><br />
+                    WEBSITE:
+                    <a href="https://eyemed.com/en-us" target="_blank">www.eyemed.com</a><br />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="benefits-accordion-tab accordion-tab">
+            <div class="benefits-accordion-tab-button">
+              <button class="b-button accordion-button">
+                <span class="b-tab-title">
+                  <h3>INSURANCE - SUPPLEMENTAL</h3>
+                </span>
+                <span class="b-tab-icon">
+                  <i class="closed-icon fa-solid fa-chevron-down"></i>
+                  <i class="open-icon fa-solid fa-chevron-up"></i>
+                </span>
+              </button>
+            </div>
+            <div class="benefits-accordion-tab-content accordion-content">
+              <div class="benefits-content-row">
+                <div class="benefits-content-col">
+                  <h4 class="benefits-col-header">SUPPLEMENTAL INSURANCE</h4>
+                  <p>
+                    <strong>BMWE, GP-7000</strong> - The Hartford<br />
+                    <strong>Shopcrafts, GPR-5000</strong> - The Hartford<br />
+                    <strong>Signalmen, GPR-5000</strong> - The Hartford<br />
+                    <strong>Yardmasters, GP-9000</strong> - Trustmark<br />
+                    <strong>ARASA</strong> - Trustmark<br />
+                  </p>
+                </div>
+              </div>
+              <div class="benefits-content-row">
+                <div class="benefits-content-col">
+                  <h4 class="benefits-col-header">
+                    FILING A CLAIM WITH THE HARTFORD
+                  </h4>
+                  <ul>
+                    <li>
+                      Claims must be filed with The Hartford within 20 days of
+                      the start of the disability. (Contact The Hartford to
+                      confirm filing deadlines). Failure to file a claim
+                      within the deadlines established by The Hartford will
+                      result in the denial of your claim.
+                    </li>
+                    <li>
+                      The Hartford is a supplement to the RRB and will not pay
+                      any claims until the employee has filed for benefits
+                      with the RRB. Claims for RRB and supplemental insurance
+                      should be filed at the same time.
+                    </li>
+                    <li>
+                      Employees may file a claim by calling The Hartford at
+                      <a href="tel:1-800-205-7651">1 (800) 205-7651</a> or by
+                      visiting their website at
+                      <a href="https://abilityadvantage.thehartford.com/"
+                        target="_blank">www.abilityadvantage.thehartford.com</a>.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="benefits-content-row">
+                <div class="benefits-content-col">
+                  <h4 class="benefits-col-header">
+                    FILING A CLAIM WITH TRUSTMARK
+                  </h4>
+                  <ul>
+                    <li>
+                      Claims must be filed with Trustmark within 90 days of
+                      the start of the disability. (Contact Trustmark to
+                      confirm filing deadlines). Failure to file a claim
+                      within the deadlines established by Trustmark will
+                      result in the denial of your claim.
+                    </li>
+                    <li>
+                      Trustmark is a supplement to the RRB and will not pay
+                      any claims until the employee has filed for benefits
+                      with the RRB. Claims for RRB and supplemental insurance
+                      should be filed at the same time.
+                    </li>
+                    <li>
+                      Employees may file a claim by calling Trustmark at
+                      <a href="tel:1-800-504-9052"></a>1 (800) 504-9052.
+                    </li>
+                    <li>
+                      <p>
+                        <strong>MAILING ADDRESS: </strong><br />
+                        P.O. Box 7901 <br />
+                        Lake Forest, IL. 60045 <br />
+                        Fax: 1-847-615-3866
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="benefits-accordion-tab accordion-tab">
+            <div class="benefits-accordion-tab-button">
+              <button class="b-button accordion-button">
+                <span class="b-tab-title">
+                  <h3>EAP - EMPLOYEE ASSISTANCE PROGRAM</h3>
+                </span>
+                <span class="b-tab-icon">
+                  <i class="closed-icon fa-solid fa-chevron-down"></i>
+                  <i class="open-icon fa-solid fa-chevron-up"></i>
+                </span>
+              </button>
+            </div>
+            <div class="benefits-accordion-tab-content accordion-content">
+              <div class="benefits-content-row">
+                <div class="benefits-content-col">
+                  <h4 class="benefits-col-header">TOTAL CARE EAP</h4>
+                  <p>
+                    <strong>GA-23000, GA-23111, & GA-46000</strong>
+                    <br />
+                    PHONE:
+                    <a href="tel:1-800-252-4555">1 (800) 252-4555</a> OR
+                    <a href="tel:1-800-225-2527">1 (800) 225-2527</a><br />
+                    WEBSITE:
+                    <a href="http://www.theeap.com/" target="_blank">www.theEAP.com</a>
+                  </p>
+                </div>
+              </div>
+              <div class="benefits-content-row">
+                <div class="benefits-content-col">
+                  <h4 class="benefits-col-header">ADDITIONAL LINKS:</h4>
+                  <p>
+                    <a href="./resources/docs/empinfo/3930_001.pdf" target="_blank">Self-Help Resources</a><br /><br />
+                    <a href="https://www.theeap.com/video-library/totalcare-employee-orientation"
+                      target="_blank">Orientation Video</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="benefits-accordion-tab accordion-tab">
+            <div class="benefits-accordion-tab-button">
+              <button class="b-button accordion-button">
+                <span class="b-tab-title">
+                  <h3>U.S. RAILROAD RETIREMENT BOARD</h3>
+                </span>
+                <span class="b-tab-icon">
+                  <i class="closed-icon fa-solid fa-chevron-down"></i>
+                  <i class="open-icon fa-solid fa-chevron-up"></i>
+                </span>
+              </button>
+            </div>
+            <div class="benefits-accordion-tab-content accordion-content">
+              <div class="benefits-content-row">
+                <div class="benefits-content-col">
+                  <h4 class="benefits-col-header">
+                    U.S. RAILROAD RETIREMENT BOARD
+                  </h4>
+                  <p>
+                    63 W. Jefferson St., Suite 102<br />
+                    Joliet, IL 60432-4337<br />
+                    PHONE: <a href="tel:877-772-5772">(877) 772-4337</a><br />
+                    WEBSITE:
+                    <a href="http://www.rrb.gov/" target="_blank">www.rrb.gov</a>
+                  </p>
+                </div>
+              </div>
+              <div class="benefits-content-row">
+                <div class="benefits-content-col">
+                  <h4 class="benefits-col-header">
+                    U.S. RAILROAD RETIREMENT BOARD
+                  </h4>
+                  <p>
+                    844 North Rush St.<br />
+                    Chicago, IL 60611
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="benefits-accordion-tab accordion-tab">
+            <div class="benefits-accordion-tab-button">
+              <button class="b-button accordion-button">
+                <span class="b-tab-title">
+                  <h3>VANGUARD (401K)</h3>
+                </span>
+                <span class="b-tab-icon">
+                  <i class="closed-icon fa-solid fa-chevron-down"></i>
+                  <i class="open-icon fa-solid fa-chevron-up"></i>
+                </span>
+              </button>
+            </div>
+            <div class="benefits-accordion-tab-content accordion-content">
+              <div class="benefits-content-row">
+                <div class="benefits-content-col">
+                  <h4 class="benefits-col-header">VANGUARD</h4>
+                  <p>
+                    PHONE: <a href="tel:1-800-523-1188">1 (800) 523-1188</a><br />
+                    WEBSITE:
+                    <a href="https://personal.vanguard.com/us/hnwnesc/nesc/LoginPage"
+                      target="_blank">www.personal.vanguard.com</a>
+                  </p>
+                </div>
+                <div class="benefits-content-col">
+                  <p>
+                    <a href="./resources/docs/empinfo/Financial Wellness Announcement Flyer.pdf"
+                      target="_blank">FINANCIAL WELLNESS FLYER</a><br /><br />
+                    <a href="./resources/docs/empinfo/0709_001.pdf" target="_blank">SUMMARY OF MATERIAL MODIFICATIONS -
+                      401K</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="benefits-accordion-tab accordion-tab">
+            <div class="benefits-accordion-tab-button">
+              <button class="b-button accordion-button">
+                <span class="b-tab-title">
+                  <h3>AFLAC INSURANCE</h3>
+                </span>
+                <span class="b-tab-icon">
+                  <i class="closed-icon fa-solid fa-chevron-down"></i>
+                  <i class="open-icon fa-solid fa-chevron-up"></i>
+                </span>
+              </button>
+            </div>
+            <div class="benefits-accordion-tab-content accordion-content">
+              <div class="benefits-content-row">
+                <div class="benefits-content-col">
+                  <h4 class="benefits-col-header">AFLAC</h4>
+                  <p>
+                    For more information contact:<br />
+                    DAVID CICHON<br />
+                    EMAIL:
+                    <a href="mailto:david_cichon@us.aflac.com">david_cichon@us.aflac.com</a><br />
+                    WEBSITE:
+                    <a href="http://www.aflac.com/" target="_blank">www.aflac.com</a><br />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="benefits-accordion-tab accordion-tab">
+            <div class="benefits-accordion-tab-button">
+              <button class="b-button accordion-button">
+                <span class="b-tab-title">
+                  <h3>METLIFE INSURANCE & BENEFITS</h3>
+                </span>
+                <span class="b-tab-icon">
+                  <i class="closed-icon fa-solid fa-chevron-down"></i>
+                  <i class="open-icon fa-solid fa-chevron-up"></i>
+                </span>
+              </button>
+            </div>
+            <div class="benefits-accordion-tab-content accordion-content">
+              <div class="benefits-content-row">
+                <div class="benefits-content-col">
+                  <h4 class="benefits-col-header">METLIFE</h4>
+                  <p>
+                    PHONE:
+                    <a href="tel:1-800-638-5433">1-800-METLIFE</a><br />
+                    WEBSITE:
+                    <a href="https://www.metlife.com/" target="_blank">www.metlife.com</a><br />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="benefits-accordion-tab accordion-tab">
+            <div class="benefits-accordion-tab-button">
+              <button class="b-button accordion-button">
+                <span class="b-tab-title">
+                  <h3>ADDITIONAL LINKS</h3>
+                </span>
+                <span class="b-tab-icon">
+                  <i class="closed-icon fa-solid fa-chevron-down"></i>
+                  <i class="open-icon fa-solid fa-chevron-up"></i>
+                </span>
+              </button>
+            </div>
+            <div class="benefits-accordion-tab-content accordion-content">
+              <div class="benefits-content-row">
+                <div class="benefits-content-col">
+                  <p>
+                    <a href="https://us.hoyasafety.com/login.asp?USER=ihbrr_adm&PWD=f4264b096c85df501fd2d7f9c205b3b6"
+                      target="_blank">IHB PRESCRIPTION SAFETY GLASSES PROGRAM</a><br /><br />
+                    <a href="./resources/docs/empinfo/GM-Supplier-Discount.pdf" target="_blank">GM SUPPLIER
+                      DISCOUNTS</a><br /><br />
+                    <a href="./resources/docs/empinfo/Ford Motor Company X-Plan.pdf" target="_blank">FORD SUPPLIER
+                      DISCOUNTS</a><br /><br />
+                    <a href="./resources/docs/empinfo/cont_edu_reimbursement.pdf" target="_blank">CONTINUING EDUCATION
+                      REIMBURSEMENT FORM</a><br /><br />
+                    <a href="./resources/docs/empinfo/cont_edu_request.pdf" target="_blank">CONTINUING EDUCATION REQUEST
+                      FORM</a><br /><br />
+                    <a href="./resources/docs/empinfo/THCDrugTesting.pdf" target="_blank">WHAT YOU SHOULD KNOW ABOUT CBD
+                      OIL, THC, AND DOT DRUG
+                      TESTING</a><br /><br />
+                    <a href="./resources/docs/empinfo/ERISA notice.pdf" target="_blank">ERISA ANNUAL REPORTS AND SUMMARY
+                      ANNUAL REPORTS</a><br /><br />
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-    <script src="./resources/js/observer.js"></script>
-  </body>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-wrapper-desktop">
+      <div class="footer-desktop">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="./resources/images/ihb-logo.png" alt="IHB Logo" />
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Employees</h3>
+          <a href="./employee-resources.html">Resources</a>
+          <a href="./ihb-apps.html">IHB Apps</a>
+          <a href="https://www2.nscorp.com/WebConnect/wcLogin.jsp" target="_blank">NS Mainframe</a>
+          <a href="https://ihb1.maxaccel.com/SafeTrack/" target="_blank">SafeTrack</a>
+          <a href="https://webmail.ihbrr.com/owa" target="_blank">Email</a>
+          <a href="/employee-info.html">Info</a>
+          <a href="./policies-benefits.html">Policies & Benefits</a>
+          <a href="https://newerc.nscorp.com/irj/portal" target="_blank">ERC</a>
+          <a href="https://www.theeap.com/" target="_blank">EAP</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Services</h3>
+          <a href="./services.html">Services</a>
+          <a href="./safety-hotline.html">Safety Hotline</a>
+          <a href="./bulletins.html">Bulletins</a>
+          <a href="./tariffs.html">Tariffs</a>
+          <a href="./maps.html">Maps</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Our Business</h3>
+          <a href="./about-us.html">About Us</a>
+          <a href="./business-development.html">Business Development</a>
+        </div>
+        <div class="footer-col">
+          <h3>Local Industries</h3>
+          <a href="http://www.csx.com/" target="_blank">CSX</a>
+          <a href="http://www.nscorp.com/" target="_blank">Norfolk Southern</a>
+          <a href="http://www.ihbrr.com/lib/links/bnsflinks/bnsflinks.htm">BNSF Links</a>
+          <a href="http://www.ihbrr.com/lib/links/uplinks/uplinks.htm">UP Links</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <a href="./contact-us.html">Contact Us</a>
+          <a href="./questions.html">Submit a Question</a>
+          <p>Customer Service & Car Tracing: <a href="tel:708-201-3460">(708) 201-3460</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrapper-mobile">
+      <div class="footer-mobile">
+        <div class="footer-logo">
+          <a href="/"><img src="./resources/images/ihb-logo.png" alt="IHB Logo" /></a>
+        </div>
+        <div class="footer-accordion">
+          <div class="fa-tab accordion-tab">
+            <div class="fa-tab-main">
+              <div class="fa-tab-button">
+                <button class="fa-button accordion-button">
+                  <span class="fa-button-title">EMPLOYEES</span>
+                  <span class="fa-button-icon"><i class="closed-icon fa-solid fa-chevron-down"></i>
+                    <i class="open-icon fa-solid fa-chevron-up"></i></span>
+                </button>
+              </div>
+            </div>
+            <div class="fa-submenu accordion-content">
+              <a href="./employee-resources.html">Resources</a>
+              <a href="./ihb-apps.html">IHB Apps</a>
+              <a href="https://www2.nscorp.com/WebConnect/wcLogin.jsp" target="_blank">NS Mainframe</a>
+              <a href="https://ihb1.maxaccel.com/SafeTrack/" target="_blank">SafeTrack</a>
+              <a href="https://webmail.ihbrr.com/owa" target="_blank">Email</a>
+              <a href="/employee-info.html">Info</a>
+
+              <a href="./policies-benefits.html">Policies & Benefits</a>
+
+              <a href="https://newerc.nscorp.com/irj/portal" target="_blank">ERC</a>
+
+              <a href="https://www.theeap.com/" target="_blank">EAP</a>
+            </div>
+          </div>
+          <div class="fa-tab accordion-tab">
+            <div class="fa-tab-main">
+              <div class="fa-tab-button">
+                <button class="fa-button accordion-button">
+                  <span class="fa-button-title">SERVICES</span>
+                  <span class="fa-button-icon"><i class="closed-icon fa-solid fa-chevron-down"></i>
+                    <i class="open-icon fa-solid fa-chevron-up"></i></span>
+                </button>
+              </div>
+            </div>
+            <div class="fa-submenu accordion-content">
+              <a href="./services.html">Services</a>
+              <a href="./safety-hotline.html">Safety Hotline</a>
+              <a href="./bulletins.html">Bulletins</a>
+              <a href="./tariffs.html">Tariffs</a>
+              <a href="./maps.html">Maps</a>
+            </div>
+          </div>
+          <div class="fa-tab accordion-tab">
+            <div class="fa-tab-main">
+              <div class="fa-tab-button">
+                <button class="fa-button accordion-button">
+                  <span class="fa-button-title">OUR BUSINESS</span>
+                  <span class="fa-button-icon">
+                    <i class="closed-icon fa-solid fa-chevron-down"></i>
+                    <i class="open-icon fa-solid fa-chevron-up"></i></span>
+                </button>
+              </div>
+            </div>
+            <div class="fa-submenu accordion-content">
+              <a href="./about-us.html">About Us</a>
+              <a href="./business-development.html">Business Development</a>
+            </div>
+          </div>
+          <div class="fa-tab accordion-tab">
+            <div class="fa-tab-main">
+              <div class="fa-tab-button">
+                <button class="fa-button accordion-button">
+                  <span class="fa-button-title">LOCAL INDUSTRIES</span>
+                  <span class="fa-button-icon">
+                    <i class="closed-icon fa-solid fa-chevron-down"></i>
+                    <i class="open-icon fa-solid fa-chevron-up"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div class="fa-submenu accordion-content">
+
+              <a href="http://www.csx.com/" target="_blank">CSX</a>
+              <a href="http://www.nscorp.com/" target="_blank">Norfolk Southern</a>
+              <a href="http://www.ihbrr.com/lib/links/bnsflinks/bnsflinks.htm">BNSF Links</a>
+              <a href="http://www.ihbrr.com/lib/links/uplinks/uplinks.htm">UP Links</a>
+            </div>
+          </div>
+          <div class="fa-tab accordion-tab">
+            <div class="fa-tab-main">
+              <div class="fa-tab-button">
+                <button class="fa-button accordion-button">
+                  <span class="fa-button-title">CONTACT</span>
+                  <span class="fa-button-icon">
+                    <i class="closed-icon fa-solid fa-chevron-down"></i>
+                    <i class="open-icon fa-solid fa-chevron-up"></i>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div class="fa-submenu accordion-content">
+              <a href="./contact-us.html">Contact Us</a>
+              <a href="./questions.html">Submit a Question</a>
+              <p>
+                Customer Service & Car Tracing:
+                <a href="tel:708-201-3460">(708) 201-3460</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./resources/js/observer.js"></script>
+</body>
+
 </html>

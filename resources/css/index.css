@@ -1,9 +1,11 @@
+/* HOME PAGE CONTENT GRID */
 .content-grid {
     margin-top: 3rem;
     display: grid;
     grid-template-columns: 1fr;
 }
 
+/* MISSION STATEMENT STYLES */
 .ms {
     grid-row: 1;
     justify-self: center;
@@ -34,6 +36,7 @@
     width: 50%;
 }
 
+/* MISSION STATEMENT SECTION STYLES - MOBILE */
 @media only screen and (max-width: 992px) {
     .ms {
         width: 100%;
@@ -49,6 +52,7 @@
     }
 }
 
+/* EMPLOYMENT OPPORTUNITIES SECTION STYLES */
 .eo-wrapper {
     padding: 3rem 0 3rem 0;
     margin-top: 3rem;
@@ -116,6 +120,7 @@
     background-color: #f5f5f5;
 }
 
+/* EMPLOYMENT OPPORTUNITIES SECTION STYLES - MOBILE */
 @media only screen and (max-width: 992px) {
     .eo-wrapper {
         flex-direction: column-reverse;
@@ -159,6 +164,7 @@
     }
 }
 
+/* INFO TILES SECTION STYLES */
 .body-menu {
     overflow-y: hidden;
 }
@@ -220,6 +226,7 @@
     width: 90%;
 }
 
+/* INFO MENU SECTION STYLES - MOBILE */
 @media only screen and (min-width: 992px) {
     .card-row.animate .body-menu-item {
         animation: fadeInUp 1.2s .25s both;
